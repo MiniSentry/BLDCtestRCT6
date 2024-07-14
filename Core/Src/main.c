@@ -95,7 +95,12 @@ int main(void)
   MX_TIM1_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+  static runStateStruct runStateM1;
+
+  resetState(&runStateM1);
   resetMotor();
+
+  runStateM1.pulse = 160;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -105,9 +110,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  int pulseA=100, pulseB=500, pulseC=1500;
-	  setPWM(pulseA, pulseB, pulseC);
-	  HAL_Delay(1000);
+	  readHall(&runStateM1);
+	  doPulse(&runStateM1);
+
+
   }
   /* USER CODE END 3 */
 }
