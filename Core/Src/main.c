@@ -110,9 +110,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  readHall(&runStateM1);
 	  doPulse(&runStateM1);
-
+	  if(runStateM1.curStep == 6)
+		  runStateM1.curStep = 1;
+	  else
+		  runStateM1.curStep++;
+	  HAL_Delay(10);
 
   }
   /* USER CODE END 3 */
