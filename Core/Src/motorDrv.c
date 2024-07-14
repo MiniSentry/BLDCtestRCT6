@@ -89,36 +89,36 @@ void readHall()
 
 	while(measure_flag)
 	{
-			switch(bufStep)
-			{
-				// step number is labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
-				case 1:
-					runState.curStep = 1;
-					break;
-				case 2:
-					runState.curStep = 3;
-					break;
-				case 3:
-					runState.curStep = 2;
-					break;
-				case 4:
-					runState.curStep = 5;
-					break;
-				case 5:
-					runState.curStep = 6;
-					break;
-				case 6:
-					runState.curStep = 4;
-					break;
-				default:
-					measure_flag = measure_flag + 2;	//each loop does flag+2-1
-			}
-			--measure_flag;
-			if (measure_flag > 3)
-			{
-				//TODO: add error logger here
-				measure_flag = 0;
-			}
+		switch(bufStep)
+		{
+			// step number is labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
+			case 1:
+				runState.curStep = 1;
+				break;
+			case 2:
+				runState.curStep = 3;
+				break;
+			case 3:
+				runState.curStep = 2;
+				break;
+			case 4:
+				runState.curStep = 5;
+				break;
+			case 5:
+				runState.curStep = 6;
+				break;
+			case 6:
+				runState.curStep = 4;
+				break;
+			default:
+				measure_flag = measure_flag + 2;	//each loop does flag+2-1
+		}
+		--measure_flag;
+		if (measure_flag > 3)
+		{
+			//TODO: add error logger here
+			measure_flag = 0;
+		}
 	}
 }
 
