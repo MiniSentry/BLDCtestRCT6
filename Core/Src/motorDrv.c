@@ -37,6 +37,7 @@ void resetState(runStateStruct* runState)
 	runState->pulse = 0;
 	runState->curSpd = 0;
 	runState->targetSpd = 0;
+	runState->dir = MOTOR_DIR_CW;
 }
 
 void resetMotor()
@@ -82,6 +83,7 @@ void readHall(runStateStruct* runState)
 		switch(bufStep)
 		{
 			// step number is labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
+			// for this motor 1 -> 6 is CCW
 			case 1:
 				runState->curStep = 1;
 				break;
@@ -116,25 +118,52 @@ void readHall(runStateStruct* runState)
 void doPulse(runStateStruct* runState)
 {	//	sets where current flows according to recorded rotor position
 	//	this is incomplete, read BLDC basics
-	switch(runState->curStep)
+	if(runState->dir == MOTOR_DIR_CW)
 	{
-		case 1:
-			setMotor(runState->pulse, 0, 0, 1, 0, 1);
-			break;
-		case 2:
-			setMotor(0, runState->pulse, 0, 0, 1, 1);
-			break;
-		case 3:
-			setMotor(0, runState->pulse, 0, 1, 1, 0);
-			break;
-		case 4:
-			setMotor(0, 0, runState->pulse, 1, 0, 1);
-			break;
-		case 5:
-			setMotor(0, 0, runState->pulse, 0, 1, 1);
-			break;
-		case 6:
-			setMotor(runState->pulse, 0, 0, 1, 1, 0);
-			break;
+		switch(runState->curStep)
+		{
+			case 1:
+				setMotor(runState->pulse, 0, 0, 1, 0, 1);
+				break;
+			case 2:
+				setMotor(0, runState->pulse, 0, 0, 1, 1);
+				break;
+			case 3:
+				setMotor(0, runState->pulse, 0, 1, 1, 0);
+				break;
+			case 4:
+				setMotor(0, 0, runState->pulse, 1, 0, 1);
+				break;
+			case 5:
+				setMotor(0, 0, runState->pulse, 0, 1, 1);
+				break;
+			case 6:
+				setMotor(runState->pulse, 0, 0, 1, 1, 0);
+				break;
+		}
+	}
+	else
+	{
+		/*switch(runState->curStep)
+		{
+			case 1:
+				setMotor(runState->pulse, 0, 0, 1, 0, 1);
+				break;
+			case 2:
+				setMotor(0, runState->pulse, 0, 0, 1, 1);
+				break;
+			case 3:
+				setMotor(0, runState->pulse, 0, 1, 1, 0);
+				break;
+			case 4:
+				setMotor(0, 0, runState->pulse, 1, 0, 1);
+				break;
+			case 5:
+				setMotor(0, 0, runState->pulse, 0, 1, 1);
+				break;
+			case 6:
+				setMotor(runState->pulse, 0, 0, 1, 1, 0);
+				break;
+		}*/
 	}
 }

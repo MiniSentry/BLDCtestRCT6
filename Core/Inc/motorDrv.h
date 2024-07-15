@@ -13,6 +13,8 @@
 #include "tim.h"
 #include <stdint.h>
 
+#define MOTOR_DIR_CW 0
+#define MOTOR_DIR_CCW 1
 typedef struct
 {
 	uint32_t cntMFtask;
@@ -22,6 +24,7 @@ typedef struct
 	uint16_t pulse;
 	uint32_t curSpd;
 	uint32_t targetSpd;
+	uint8_t dir;	// motor direction, CW is 0 and CCW is 1
 }runStateStruct;
 
 //static runStateStruct runStateM1;

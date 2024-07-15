@@ -100,7 +100,10 @@ int main(void)
   resetState(&runStateM1);
   resetMotor();
 
-  runStateM1.pulse = 160;
+  runStateM1.pulse = 1500;
+  runStateM1.dir = MOTOR_DIR_CW;
+
+  uint8_t i=1;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,12 +113,21 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    /*readHall(&runStateM1);
+	doPulse(&runStateM1);*/
+	 /*
+	 if(i != 7)
+		 runStateM1.curStep = i;
+	 else
+	 {
+		 i = 1;
+		 runStateM1.curStep = i;
+	 }
+	 */
+	  runStateM1.curStep = 4;
 	  doPulse(&runStateM1);
-	  if(runStateM1.curStep == 6)
-		  runStateM1.curStep = 1;
-	  else
-		  runStateM1.curStep++;
-	  HAL_Delay(10);
+	  i++;
+
 
   }
   /* USER CODE END 3 */
