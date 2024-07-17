@@ -30,7 +30,6 @@
 
 void resetState(runStateStruct* runState)
 {
-	runState->cntMFtask = 0;
 	runState->tPerStep[0] = 0;
 	runState->curStep = 0;
 	runState->prevStep = 0;
@@ -38,6 +37,8 @@ void resetState(runStateStruct* runState)
 	runState->curSpd = 0;
 	runState->targetSpd = 0;
 	runState->dir = MOTOR_DIR_CW;
+	runState->midFreqTaskFlag = 0;
+	runState->controlMode = CTRL_MODE_DUTY;
 }
 
 void resetMotor()
@@ -167,3 +168,5 @@ void doPulse(runStateStruct* runState)
 		}*/
 	}
 }
+
+

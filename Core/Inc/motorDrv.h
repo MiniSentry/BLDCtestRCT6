@@ -15,6 +15,13 @@
 
 #define MOTOR_DIR_CW 0
 #define MOTOR_DIR_CCW 1
+
+#define MID_FREQ_TASK_INTERVAL 10
+
+#define CTRL_MODE_DUTY 0
+#define CTRL_MODE_SPEED 1
+#define CTRL_MODE_ANGLE 2
+
 typedef struct
 {
 	uint32_t cntMFtask;
@@ -25,6 +32,8 @@ typedef struct
 	uint32_t curSpd;
 	uint32_t targetSpd;
 	uint8_t dir;	// motor direction, CW is 0 and CCW is 1
+	uint8_t midFreqTaskFlag;
+	uint8_t controlMode;
 }runStateStruct;
 
 //static runStateStruct runStateM1;
