@@ -100,10 +100,10 @@ int main(void)
   resetState(&runStateM1);
   resetMotor();
 
-  runStateM1.pulse = 1500;
+  runStateM1.pulse = 100;
   runStateM1.dir = MOTOR_DIR_CW;
 
-  uint8_t i=1;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -113,9 +113,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    /*readHall(&runStateM1);
-	doPulse(&runStateM1);*/
-	 /*
+    readHall(&runStateM1);
+	doPulse(&runStateM1);
+	/*
+	uint8_t i = 1;
 	 if(i != 7)
 		 runStateM1.curStep = i;
 	 else
@@ -123,15 +124,13 @@ int main(void)
 		 i = 1;
 		 runStateM1.curStep = i;
 	 }
+	 i++;
 	 */
 	  if(TickPerMs >= MID_FREQ_TASK_INTERVAL)
 	  {
 		  runStateM1.midFreqTaskFlag = 1;
 		  TickPerMs = 0;
 	  }
-	  runStateM1.curStep = 4;
-	  doPulse(&runStateM1);
-	  i++;
 
 
   }
