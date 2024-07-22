@@ -6,42 +6,20 @@
  */
 #include "motorDrv.h"
 
-
-#define MOTOR_TIM htim1
-#define MOTOR_U_CHANNEL TIM_CHANNEL_1
-#define MOTOR_V_CHANNEL TIM_CHANNEL_2
-#define MOTOR_W_CHANNEL TIM_CHANNEL_3
-
-#define EN_U_Pin GPIO_PIN_7
-#define EN_U_GPIO_Port GPIOC
-#define EN_V_Pin GPIO_PIN_8
-#define EN_V_GPIO_Port GPIOC
-#define EN_W_Pin GPIO_PIN_9
-#define EN_W_GPIO_Port GPIOC
-
-#define HALL_A_PIN GPIO_PIN_12
-#define HALL_A_GPIO_Port GPIOB
-#define HALL_B_PIN GPIO_PIN_13
-#define HALL_B_GPIO_Port GPIOB
-#define HALL_C_PIN GPIO_PIN_14
-#define HALL_C_GPIO_Port GPIOB
-
-
-
 void resetState(runStateStruct* runState)
 {
 	runState->tPerStep[0] = 0;
-	runState->curStep = 0;
-	runState->prevStep = 0;
+	runState->curStep = 1;
+	runState->prevStep = 1;
 	runState->pulse = 0;
 	runState->curSpd = 0;
 	runState->targetSpd = 0;
-	runState->dir = MOTOR_DIR_CW;
+	runState->dir = MOTOR_DIR_CCW;
 	runState->midFreqTaskFlag = 0;
 	runState->controlMode = CTRL_MODE_DUTY;
 }
 
-void resetMotor()
+void resetMotor(void)
 {
 	HAL_TIM_PWM_Stop(&MOTOR_TIM, MOTOR_U_CHANNEL);
 	HAL_TIM_PWM_Stop(&MOTOR_TIM, MOTOR_V_CHANNEL);
@@ -119,7 +97,7 @@ void readHall(runStateStruct* runState)
 void doPulse(runStateStruct* runState)
 {	//	sets where current flows according to recorded rotor position
 	//	this is incomplete, read BLDC basics
-	if(runState->dir == MOTOR_DIR_CW)
+	if(runState->dir == MOTOR_DIR_CCW)
 	{
 		switch(runState->curStep)
 		{
@@ -169,4 +147,7 @@ void doPulse(runStateStruct* runState)
 	}
 }
 
+void moveMotor(runStateStruct* runState)
+{
 
+}
