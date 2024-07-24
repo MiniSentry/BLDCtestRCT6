@@ -12,6 +12,7 @@
 #include "gpio.h"
 #include "tim.h"
 #include <stdint.h>
+#include "sysTickManipulator.h"
 
 //motor PWM timer pins
 #define MOTOR_TIM htim1
@@ -35,6 +36,9 @@
 #define HALL_C_PIN GPIO_PIN_14
 #define HALL_C_GPIO_Port GPIOB
 
+#define HALL_READ_POLLING 0
+#define HALL_READ_USE_INTERRUPT 1
+
 //motor rotate direction define
 #define MOTOR_DIR_CW 0
 #define MOTOR_DIR_CCW 1
@@ -50,7 +54,8 @@
 typedef struct
 {
 	uint32_t cntMFtask;
-	uint32_t tPerStep[10];
+	uint32_t tPerStep[36];	// TODO: replace this with a LIFO style stack
+	uint8_t tPerStepTop;
 	uint8_t curStep;
 	uint8_t prevStep;
 	uint16_t pulse;
@@ -59,6 +64,7 @@ typedef struct
 	uint8_t dir;	// motor direction, CW is 0 and CCW is 1
 	uint8_t midFreqTaskFlag;
 	uint8_t controlMode;
+	uint8_t hallReadMode;
 }runStateStruct;
 
 //static runStateStruct runStateM1;

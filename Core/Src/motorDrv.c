@@ -9,6 +9,7 @@
 void resetState(runStateStruct* runState)
 {
 	runState->tPerStep[0] = 0;
+	runState->tPerStepTop = 0;	//empty stack
 	runState->curStep = 1;
 	runState->prevStep = 1;
 	runState->pulse = 0;
@@ -17,6 +18,7 @@ void resetState(runStateStruct* runState)
 	runState->dir = MOTOR_DIR_CCW;
 	runState->midFreqTaskFlag = 0;
 	runState->controlMode = CTRL_MODE_DUTY;
+	runState->hallReadMode = HALL_READ_USE_INTERRUPT;
 }
 
 void resetMotor(void)
@@ -53,43 +55,55 @@ void setMotor(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC, uint8_t enA, ui
 
 void readHall(runStateStruct* runState)
 {
-	uint8_t measure_flag=1;
-	uint8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
-	runState->prevStep = runState->curStep;
-
-	while(measure_flag)
+	uint8_t bufStep;
+	if (runState->hallReadMode == HALL_READ_USE_INTERRUPT)
 	{
-		switch(bufStep)
+		bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN)
+		+ (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1)
+		+ (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
+	}
+	else
+	{
+		extern volatile uint8_t HallReadISRcache;
+		bufStep = HallReadISRcache;
+	}
+	runState->prevStep = runState->curStep;
+	switch(bufStep)
+	{
+		case 1:
+			runState->curStep = 1;
+			break;
+		case 2:
+			runState->curStep = 3;
+			break;
+		case 3:
+			runState->curStep = 2;
+			break;
+		case 4:
+			runState->curStep = 5;
+			break;
+		case 5:
+			runState->curStep = 6;
+			break;
+		case 6:
+			runState->curStep = 4;
+			break;
+		default:
+			// TODO: add error logger
+			break;
+	}
+	//records time for speed calculation
+	if (runState->dir == MOTOR_DIR_CCW)
+	{
+		if(runState->curStep - runState->prevStep == 1
+		|| (runState->curStep == 1 && runState->prevStep == 6) )
 		{
-			// step number is labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
-			// for this motor 1 -> 6 is CCW
-			case 1:
-				runState->curStep = 1;
-				break;
-			case 2:
-				runState->curStep = 3;
-				break;
-			case 3:
-				runState->curStep = 2;
-				break;
-			case 4:
-				runState->curStep = 5;
-				break;
-			case 5:
-				runState->curStep = 6;
-				break;
-			case 6:
-				runState->curStep = 4;
-				break;
-			default:
-				measure_flag = measure_flag + 2;	//each loop does flag+2-1
-		}
-		--measure_flag;
-		if (measure_flag > 3)
-		{
-			//TODO: add error logger here
-			//	also add step loss identifier
-			measure_flag = 0;
+			if(runState->tPerStepTop < 35)
+			{
+			}
+			else
+			{
+			}
 		}
 	}
 }
@@ -149,5 +163,9 @@ void doPulse(runStateStruct* runState)
 
 void moveMotor(runStateStruct* runState)
 {
+	extern volatile uint8_t HallISRflag;
+	if (HallISRflag == 1)
+		readHall(runState);
+	HallISRflag = 0;
 
 }
