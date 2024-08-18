@@ -8,12 +8,7 @@
 
 void resetState(runStateStruct* runState)
 {
-<<<<<<< HEAD:UsrLib/motorDrv.c
-	runState->tPerStep = 0;
-=======
-	runState->tPerStep[0] = 0;
-	runState->tPerStepTop = 0;	//empty stack
->>>>>>> 3d5449fa600bf452943b50cf7ba3bb2615b3d89f:Core/Src/motorDrv.c
+
 	runState->curStep = 1;
 	runState->prevStep = 1;
 	runState->pulse = 0;
@@ -22,7 +17,6 @@ void resetState(runStateStruct* runState)
 	runState->dir = MOTOR_DIR_CCW;
 	runState->midFreqTaskFlag = 0;
 	runState->controlMode = CTRL_MODE_DUTY;
-	runState->hallReadMode = HALL_READ_USE_INTERRUPT;
 }
 
 void resetMotor(void)
