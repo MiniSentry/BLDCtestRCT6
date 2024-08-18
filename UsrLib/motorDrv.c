@@ -8,7 +8,7 @@
 
 void resetState(runStateStruct* runState)
 {
-	runState->tPerStep[0] = 0;
+	runState->tPerStep = 0;
 	runState->curStep = 1;
 	runState->prevStep = 1;
 	runState->pulse = 0;

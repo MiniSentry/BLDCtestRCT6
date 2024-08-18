@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "motorDrv.h"
+#include "speedCalc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,6 +60,7 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint32_t TickPerMs = 0;
+runStateStruct* runStateM1addr;
 /* USER CODE END 0 */
 
 /**
@@ -69,7 +71,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  static runStateStruct runStateM1;
+  runStateM1addr = &runStateM1;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -95,12 +98,11 @@ int main(void)
   MX_TIM1_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-  static runStateStruct runStateM1;
 
   resetState(&runStateM1);
   resetMotor();
 
-  runStateM1.pulse = 800;
+  runStateM1.pulse = 100;
   runStateM1.dir = MOTOR_DIR_CCW;
 
   /* USER CODE END 2 */
@@ -112,14 +114,15 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    readHall(&runStateM1);
+    //readHall(&runStateM1);
     doPulse(&runStateM1);
     if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
     {
       runStateM1.midFreqTaskFlag = 1;
       TickPerMs = 0;
     }
-    HAL_Delay(1);
+    runStateM1.curSpd = getVelocity(&runStateM1);
+    //HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }
@@ -155,7 +158,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
