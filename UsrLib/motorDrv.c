@@ -54,17 +54,7 @@ void setMotor(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC, uint8_t enA, ui
 void readHall(runStateStruct* runState)
 {
 	uint8_t bufStep;
-	if (runState->hallReadMode == HALL_READ_USE_INTERRUPT)
-	{
-		bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN)
-		+ (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1)
-		+ (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
-	}
-	else
-	{
-		extern volatile uint8_t HallReadISRcache;
-		bufStep = HallReadISRcache;
-	}
+	bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
 	runState->prevStep = runState->curStep;
 	switch(bufStep)
 	{
