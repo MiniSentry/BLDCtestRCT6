@@ -12,6 +12,7 @@
 #include "gpio.h"
 #include "tim.h"
 #include <stdint.h>
+#include "sysTickManipulator.h"
 
 //motor PWM timer pins
 #define MOTOR_TIM htim1
@@ -35,6 +36,9 @@
 #define HALL_C_PIN GPIO_PIN_14
 #define HALL_C_GPIO_Port GPIOB
 
+#define HALL_READ_POLLING 0
+#define HALL_READ_USE_INTERRUPT 1
+
 //motor rotate direction define
 #define MOTOR_DIR_CW 0
 #define MOTOR_DIR_CCW 1
@@ -51,19 +55,30 @@ typedef struct
 {
 	// u might have noticed that this should be split into 2 structs, one for moving the motor and the other for hall sensor
 	uint32_t cntMFtask;
+<<<<<<< HEAD:UsrLib/motorDrv.h
 	uint32_t tPerStep;
 	int8_t curStep;
 	int8_t prevStep;
+=======
+	uint32_t tPerStep[36];	// TODO: replace this with a LIFO style stack
+	uint8_t tPerStepTop;
+	uint8_t curStep;
+	uint8_t prevStep;
+>>>>>>> 3d5449fa600bf452943b50cf7ba3bb2615b3d89f:Core/Inc/motorDrv.h
 	uint16_t pulse;
 	int32_t curSpd;
 	uint32_t targetSpd;
 	uint8_t dir;	// motor direction, CW is 0 and CCW is 1
 	uint8_t midFreqTaskFlag;
 	uint8_t controlMode;
+<<<<<<< HEAD:UsrLib/motorDrv.h
 	int32_t electric_rotations;		//CCW counts up and CW counts down, you will probably see this staying in negative in CW mode
 	int8_t ActualDir;
 	int8_t lastActualDir;
 	uint32_t pulse_timestamp;
+=======
+	uint8_t hallReadMode;
+>>>>>>> 3d5449fa600bf452943b50cf7ba3bb2615b3d89f:Core/Inc/motorDrv.h
 }runStateStruct;
 
 //static runStateStruct runStateM1;
