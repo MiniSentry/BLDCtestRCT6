@@ -10,10 +10,13 @@
 volatile uint8_t Hall_A_Status;
 volatile uint8_t Hall_B_Status;
 volatile uint8_t Hall_C_Status;
-
+volatile uint32_t dbg_time_enter;
+volatile uint32_t dbg_time_exit;
+volatile uint8_t dbg_flag;
 extern runStateStruct* runStateM1addr;			//so the ISR will be able to locate your motor's properties
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	//this is clearly non-portable, u will need to edit this if u want to add a second motor
 {
+
 	switch(GPIO_Pin)
 	{
 		case HALL_A_PIN:
@@ -35,6 +38,17 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	//this is clearly non-portable, u
 
 void updateState(runStateStruct* runState)
 {
+	if(dbg_flag == 1)
+	{
+		dbg_flag = 0;
+		dbg_time_enter = getCurrentMicros();
+	}
+	else
+	{
+		dbg_flag = 1;
+		dbg_time_exit = getCurrentMicros();
+	}
+
 	uint32_t new_pulse_timestamp = getCurrentMicros();
 	//int8_t bufStep = Hall_A_Status + (Hall_B_Status << 1) + (Hall_C_Status << 2);
 	int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
@@ -74,6 +88,7 @@ void updateState(runStateStruct* runState)
 		runState->tPerStep = 0;
 	runState->pulse_timestamp = new_pulse_timestamp;
 	runState->lastActualDir = runState->ActualDir;	//TODO: u might want to remove a dir from the struct as well and edit the implementation here
+
 }
 
 int32_t getVelocity(runStateStruct* runState)
