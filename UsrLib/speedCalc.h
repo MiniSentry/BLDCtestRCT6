@@ -13,6 +13,8 @@
 #include "stm32f1xx_hal.h"
 #include "sysTickManipulator.h"
 
+#include "dbgPrintLog.h"
+
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 void updateState(runStateStruct* runState);
 int32_t getVelocity(runStateStruct* runState);

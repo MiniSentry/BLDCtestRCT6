@@ -16,7 +16,6 @@ volatile uint8_t dbg_flag;
 extern runStateStruct* runStateM1addr;			//so the ISR will be able to locate your motor's properties
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	//this is clearly non-portable, u will need to edit this if u want to add a second motor
 {
-
 	switch(GPIO_Pin)
 	{
 		case HALL_A_PIN:
@@ -56,6 +55,7 @@ void updateState(runStateStruct* runState)
 	// This magic array will allow you to get current step number labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
 	//	using just raw results from your hall sensor.
 	bufStep = GET_STEP[bufStep];
+	printf("time %lu\nstep %d\n", new_pulse_timestamp, bufStep);
 	if(bufStep == -1)
 		return;
 	if (bufStep == runState->curStep)
