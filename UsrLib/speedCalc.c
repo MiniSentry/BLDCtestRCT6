@@ -6,7 +6,7 @@
  */
 #include "speedCalc.h"
 #define _2PI 6.28318530718f
-#define PP 12
+#define PP 3
 volatile uint8_t Hall_A_Status;
 volatile uint8_t Hall_B_Status;
 volatile uint8_t Hall_C_Status;
@@ -14,20 +14,28 @@ volatile uint32_t dbg_time_enter;
 volatile uint32_t dbg_time_exit;
 volatile uint8_t dbg_flag;
 extern runStateStruct* runStateM1addr;			//so the ISR will be able to locate your motor's properties
+
+void speedCalcInit()
+{
+	Hall_A_Status = 1;
+	Hall_B_Status = 1;
+	Hall_C_Status = 0;
+}
+
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	//this is clearly non-portable, u will need to edit this if u want to add a second motor
 {
 	switch(GPIO_Pin)
 	{
 		case HALL_A_PIN:
-			//Hall_A_Status = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN);
+			Hall_A_Status = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN);
 			updateState(runStateM1addr);
 			break;
 		case HALL_B_PIN:
-			//Hall_B_Status = HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN);
+			Hall_B_Status = HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN);
 			updateState(runStateM1addr);
 			break;
 		case HALL_C_PIN:
-			//Hall_C_Status = HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN);
+			Hall_C_Status = HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN);
 			updateState(runStateM1addr);
 			break;
 		default:
@@ -49,13 +57,13 @@ void updateState(runStateStruct* runState)
 	}
 
 	uint32_t new_pulse_timestamp = getCurrentMicros();
-	//int8_t bufStep = Hall_A_Status + (Hall_B_Status << 1) + (Hall_C_Status << 2);
-	int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
+	int8_t bufStep = Hall_A_Status + (Hall_B_Status << 1) + (Hall_C_Status << 2);
+	//int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
 	const int8_t GET_STEP[8] = {-1, 1, 3, 2, 5, 6, 4, -1};
 	// This magic array will allow you to get current step number labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
 	//	using just raw results from your hall sensor.
 	bufStep = GET_STEP[bufStep];
-	printf("time %lu\nstep %d\n", new_pulse_timestamp, bufStep);
+	printf("time %lu step %d\n", new_pulse_timestamp, bufStep);
 	if(bufStep == -1)
 		return;
 	if (bufStep == runState->curStep)

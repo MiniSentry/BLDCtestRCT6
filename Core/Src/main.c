@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "motorDrv.h"
 #include "speedCalc.h"
+//#include "pid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -73,6 +74,9 @@ int main(void)
   /* USER CODE BEGIN 1 */
   static runStateStruct runStateM1;
   runStateM1addr = &runStateM1;
+  //static PIDstruct PIDstrM1;
+  //float error;
+  //float dbg_pid_output;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -88,7 +92,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  speedCalcInit();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -98,11 +102,10 @@ int main(void)
   MX_TIM1_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-
   resetState(&runStateM1);
   resetMotor();
 
-  runStateM1.pulse = 100;
+  runStateM1.pulse = 200;
   runStateM1.dir = MOTOR_DIR_CCW;
 
   /* USER CODE END 2 */
@@ -114,15 +117,18 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    //readHall(&runStateM1);
-    doPulse(&runStateM1);
-    if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
-    {
-      runStateM1.midFreqTaskFlag = 1;
-      TickPerMs = 0;
-    }
-    runStateM1.curSpd = getVelocity(&runStateM1);
-    //HAL_Delay(1);
+	doPulse(&runStateM1);
+	if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
+	{
+	  runStateM1.midFreqTaskFlag = 1;
+	  printf("speed %ld\n", runStateM1.curSpd);
+	  TickPerMs = 0;
+	}
+	runStateM1.curSpd = getVelocity(&runStateM1);
+	//error = 100.0f - (float)runStateM1.curSpd;
+	//dbg_pid_output = PIDoperator(error, &PIDstrM1);
+	//printf("PID output %f", dbg_pid_output);
+	//HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }
