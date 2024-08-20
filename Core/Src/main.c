@@ -110,7 +110,8 @@ int main(void)
   resetMotor();
   runStateM1.pulse = 200;
   runStateM1.dir = MOTOR_DIR_CCW;
-  runStateM1.targetSpd = 100.0f;
+  runStateM1.targetSpd = 150.0f;
+  HAL_Delay(200);
   /* USER CODE END 2 */
 
   /* Infinite loop */

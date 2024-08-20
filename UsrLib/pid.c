@@ -8,11 +8,11 @@
 
 void PIDstructInit(PIDstruct* PIDstruct)
 {
-	PIDstruct->P = 0.03f;
-	PIDstruct->I = 1.0f;
+	PIDstruct->P = 0.02f;
+	PIDstruct->I = 0.5f;
 	PIDstruct->D = 0.0f;
 	PIDstruct->ramp = 100;
-	PIDstruct->limit = 4;
+	PIDstruct->limit = 8;
 	PIDstruct->error_prev = 0;
 	PIDstruct->output_prev = 0;
 	PIDstruct->integral_prev = 0;

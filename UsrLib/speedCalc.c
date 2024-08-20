@@ -68,6 +68,7 @@ void updateState(runStateStruct* runState)
 		return;
 	if (bufStep == runState->curStep)
 		return;		//bloody step did not even change
+
 	if (bufStep - runState->curStep < -3)
 	{
 		runState->electric_rotations++;	// CCW rotation increase
@@ -83,6 +84,7 @@ void updateState(runStateStruct* runState)
 		else
 			runState->ActualDir = -1;	//cw
 	}
+
 	runState->prevStep = runState->curStep;	//TODO: we might want to just remove prevStep from the structure because it is useless
 	runState->curStep = bufStep;
 
@@ -90,10 +92,19 @@ void updateState(runStateStruct* runState)
 	if (runState->ActualDir == runState->lastActualDir)
 	{
 		//not oscillating or having a dir change
-		runState->tPerStep = new_pulse_timestamp - runState->pulse_timestamp;
+		for (int i = 5; i > 0; i--)
+		{
+			runState->tPerStep[i] = runState->tPerStep[i-1];
+		}
+		runState->tPerStep[0] = new_pulse_timestamp - runState->pulse_timestamp;
 	}
 	else
-		runState->tPerStep = 0;
+	{
+		for (int i = 5; i >= 0; i--)
+		{
+			runState->tPerStep[i] = 0;
+		}
+	}
 	runState->pulse_timestamp = new_pulse_timestamp;
 	runState->lastActualDir = runState->ActualDir;	//TODO: u might want to remove a dir from the struct as well and edit the implementation here
 
@@ -103,7 +114,8 @@ float getVelocity(runStateStruct* runState)
 {
 	//__disable_irq();
 	uint32_t last_pulse_timestamp = runState->pulse_timestamp;
-	uint32_t last_pulse_diff = runState->tPerStep;
+	uint32_t last_pulse_diff = (runState->tPerStep[0] + runState->tPerStep[1] + runState->tPerStep[2] + runState->tPerStep[3] + runState->tPerStep[4]
+	+ runState->tPerStep[5]) / 6;
 	//__enable_irq();
 	if (last_pulse_diff == 0 || ((getCurrentMicros() - last_pulse_timestamp) > last_pulse_diff*4) )
 	{ // last velocity isn't accurate if too old
@@ -111,7 +123,8 @@ float getVelocity(runStateStruct* runState)
 	}
 	else
 	{
-		return (runState->ActualDir * (_2PI / (float)(PP*6)) / (last_pulse_diff / 1000000.0f));		// rad/s
+		float dbg_velocity_result = (runState->ActualDir * (_2PI / (float)(PP*6)) / (last_pulse_diff / 1000000.0f));
+		return dbg_velocity_result;	// rad/s
 	}
 }
 

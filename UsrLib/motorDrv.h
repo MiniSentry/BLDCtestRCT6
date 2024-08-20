@@ -55,7 +55,7 @@ typedef struct
 {
 	// u might have noticed that this should be split into 2 structs, one for moving the motor and the other for hall sensor
 	uint32_t cntMFtask;
-	uint32_t tPerStep;
+	uint32_t tPerStep[6];
 	int8_t curStep;
 	int8_t prevStep;
 	uint16_t pulse;
