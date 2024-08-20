@@ -28,7 +28,8 @@
 /* USER CODE BEGIN Includes */
 #include "motorDrv.h"
 #include "speedCalc.h"
-//#include "pid.h"
+#include "pid.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,6 +63,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 uint32_t TickPerMs = 0;
 runStateStruct* runStateM1addr;
+PIDstruct PIDM1struct;
 /* USER CODE END 0 */
 
 /**
@@ -74,9 +76,10 @@ int main(void)
   /* USER CODE BEGIN 1 */
   static runStateStruct runStateM1;
   runStateM1addr = &runStateM1;
-  //static PIDstruct PIDstrM1;
-  //float error;
-  //float dbg_pid_output;
+  float error;
+  float dbg_pid_output;
+  uint32_t dbg_start_time;
+  uint32_t dbg_end_time;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -102,12 +105,12 @@ int main(void)
   MX_TIM1_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+  PIDstructInit(&PIDM1struct);
   resetState(&runStateM1);
   resetMotor();
-
   runStateM1.pulse = 200;
   runStateM1.dir = MOTOR_DIR_CCW;
-
+  runStateM1.targetSpd = 100.0f;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -120,14 +123,17 @@ int main(void)
 	doPulse(&runStateM1);
 	if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
 	{
-	  runStateM1.midFreqTaskFlag = 1;
-	  printf("speed %ld\n", runStateM1.curSpd);
-	  TickPerMs = 0;
+		dbg_start_time=getCurrentMicros();
+		runStateM1.midFreqTaskFlag = 1;
+		TickPerMs = 0;
+		runStateM1.curSpd = getVelocity(&runStateM1);
+		error = runStateM1.targetSpd - runStateM1.curSpd;
+		dbg_pid_output = PIDoperator(error, &PIDM1struct);
+		runStateM1.pulse = (uint16_t)(dbg_pid_output * 133);
+		dbg_end_time = getCurrentMicros();
+		printf("[%ld]speed %f ", dbg_start_time, runStateM1.curSpd);
+		printf(" PID output :%f at[%ld]\n", dbg_pid_output, dbg_end_time);
 	}
-	runStateM1.curSpd = getVelocity(&runStateM1);
-	//error = 100.0f - (float)runStateM1.curSpd;
-	//dbg_pid_output = PIDoperator(error, &PIDstrM1);
-	//printf("PID output %f", dbg_pid_output);
 	//HAL_Delay(1);
   }
   /* USER CODE END 3 */

@@ -18,6 +18,6 @@
 void speedCalcInit();
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 void updateState(runStateStruct* runState);
-int32_t getVelocity(runStateStruct* runState);
+float getVelocity(runStateStruct* runState);
 
 #endif /* INC_SPEEDCALC_H_ */

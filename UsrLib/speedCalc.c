@@ -27,15 +27,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	//this is clearly non-portable, u
 	switch(GPIO_Pin)
 	{
 		case HALL_A_PIN:
-			Hall_A_Status = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN);
+			//Hall_A_Status = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN);
 			updateState(runStateM1addr);
 			break;
 		case HALL_B_PIN:
-			Hall_B_Status = HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN);
+			//Hall_B_Status = HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN);
 			updateState(runStateM1addr);
 			break;
 		case HALL_C_PIN:
-			Hall_C_Status = HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN);
+			//Hall_C_Status = HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN);
 			updateState(runStateM1addr);
 			break;
 		default:
@@ -57,13 +57,13 @@ void updateState(runStateStruct* runState)
 	}
 
 	uint32_t new_pulse_timestamp = getCurrentMicros();
-	int8_t bufStep = Hall_A_Status + (Hall_B_Status << 1) + (Hall_C_Status << 2);
-	//int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
+	//int8_t bufStep = Hall_A_Status + (Hall_B_Status << 1) + (Hall_C_Status << 2);
+	int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
 	const int8_t GET_STEP[8] = {-1, 1, 3, 2, 5, 6, 4, -1};
 	// This magic array will allow you to get current step number labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
 	//	using just raw results from your hall sensor.
 	bufStep = GET_STEP[bufStep];
-	printf("time %lu step %d\n", new_pulse_timestamp, bufStep);
+	//printf("time %lu step %d\n", new_pulse_timestamp, bufStep);
 	if(bufStep == -1)
 		return;
 	if (bufStep == runState->curStep)
@@ -99,19 +99,19 @@ void updateState(runStateStruct* runState)
 
 }
 
-int32_t getVelocity(runStateStruct* runState)
+float getVelocity(runStateStruct* runState)
 {
 	//__disable_irq();
 	uint32_t last_pulse_timestamp = runState->pulse_timestamp;
 	uint32_t last_pulse_diff = runState->tPerStep;
 	//__enable_irq();
-	if (last_pulse_diff == 0 || ((getCurrentMicros() - last_pulse_timestamp) > last_pulse_diff*2) )
+	if (last_pulse_diff == 0 || ((getCurrentMicros() - last_pulse_timestamp) > last_pulse_diff*4) )
 	{ // last velocity isn't accurate if too old
-		return 0;
+		return 0.0f;
 	}
 	else
 	{
-		return runState->ActualDir * (_2PI / (float)(PP*6)) / (last_pulse_diff / 1000000.0f);		// rad/s
+		return (runState->ActualDir * (_2PI / (float)(PP*6)) / (last_pulse_diff / 1000000.0f));		// rad/s
 	}
 }
 

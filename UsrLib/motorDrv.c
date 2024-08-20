@@ -80,20 +80,6 @@ void readHall(runStateStruct* runState)
 			// TODO: add error logger
 			break;
 	}
-	//records time for speed calculation
-	if (runState->dir == MOTOR_DIR_CCW)
-	{
-		if(runState->curStep - runState->prevStep == 1
-		|| (runState->curStep == 1 && runState->prevStep == 6) )
-		{
-			if(runState->tPerStepTop < 35)
-			{
-			}
-			else
-			{
-			}
-		}
-	}
 }
 
 void doPulse(runStateStruct* runState)

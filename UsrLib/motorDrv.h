@@ -58,10 +58,9 @@ typedef struct
 	uint32_t tPerStep;
 	int8_t curStep;
 	int8_t prevStep;
-	uint8_t tPerStepTop;
 	uint16_t pulse;
-	int32_t curSpd;
-	uint32_t targetSpd;
+	float curSpd;
+	float targetSpd;
 	uint8_t dir;	// motor direction, CW is 0 and CCW is 1
 	uint8_t midFreqTaskFlag;
 	uint8_t controlMode;
