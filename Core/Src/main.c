@@ -108,10 +108,13 @@ int main(void)
   PIDstructInit(&PIDM1struct);
   resetState(&runStateM1);
   resetMotor();
-  runStateM1.pulse = 200;
+  runStateM1.pulse = 800;
   runStateM1.dir = MOTOR_DIR_CCW;
-  runStateM1.targetSpd = 200.0f;
-  HAL_Delay(200);
+  runStateM1.targetSpd = 314.15927f;
+  for(uint16_t i=0; i<16000; i++)
+  {
+	  doPulse(&runStateM1);
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
