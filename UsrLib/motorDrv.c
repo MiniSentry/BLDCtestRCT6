@@ -105,7 +105,6 @@ void doPulse(runStateStruct* runState)
 
 void motorAlign(runStateStruct* runState)
 {
-	const int8_t GET_STEP[8] = {-1, 1, 3, 2, 5, 6, 4, -1};
 	runState->pulse = 100;
 	for(uint16_t j=0; j<10; j++)
 	{

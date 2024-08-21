@@ -72,31 +72,32 @@ PIDstruct PIDM1struct;
   */
 int main(void)
 {
-	/* USER CODE BEGIN 1 */
-	/* USER CODE END 1 */
 
-	/* MCU Configuration--------------------------------------------------------*/
+  /* USER CODE BEGIN 1 */
+  /* USER CODE END 1 */
 
-	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-	HAL_Init();
+  /* MCU Configuration--------------------------------------------------------*/
 
-	/* USER CODE BEGIN Init */
-	/* USER CODE END Init */
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
 
-	/* Configure the system clock */
-	SystemClock_Config();
+  /* USER CODE BEGIN Init */
+  /* USER CODE END Init */
 
-	/* USER CODE BEGIN SysInit */
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
 	speedCalcInit();
-	/* USER CODE END SysInit */
+  /* USER CODE END SysInit */
 
-	/* Initialize all configured peripherals */
-	MX_GPIO_Init();
-	MX_DMA_Init();
-	MX_I2C1_Init();
-	MX_TIM1_Init();
-	MX_UART4_Init();
-	/* USER CODE BEGIN 2 */
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_I2C1_Init();
+  MX_TIM1_Init();
+  MX_UART4_Init();
+  /* USER CODE BEGIN 2 */
 	static runStateStruct runStateM1;
 	runStateM1addr = &runStateM1;
 	PIDstructInit(&PIDM1struct);
@@ -109,15 +110,15 @@ int main(void)
 	const int8_t GET_STEP[8] = {-1, 1, 3, 2, 5, 6, 4, -1};
 	int8_t StallFlag = 0;
 	//motorAlign(&runStateM1);
-	/* USER CODE END 2 */
+  /* USER CODE END 2 */
 
-	/* Infinite loop */
-	/* USER CODE BEGIN WHILE */
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
 	while (1)
 	{
-		/* USER CODE END WHILE */
+    /* USER CODE END WHILE */
 
-		/* USER CODE BEGIN 3 */
+    /* USER CODE BEGIN 3 */
 		doPulse(&runStateM1);
 		if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
 		{
@@ -140,7 +141,7 @@ int main(void)
 				runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.curSpd - runStateM1.targetSpd, &PIDM1struct));
 		}
 	}
-	/* USER CODE END 3 */
+  /* USER CODE END 3 */
 }
 
 /**
