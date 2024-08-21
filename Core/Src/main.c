@@ -107,7 +107,6 @@ int main(void)
 
 	runStateM1.dir = MOTOR_DIR_CW;
 	runStateM1.targetSpd = -100.0f;
-	const int8_t GET_STEP[8] = {-1, 1, 3, 2, 5, 6, 4, -1};
 	int8_t StallFlag = 0;
 	//motorAlign(&runStateM1);
   /* USER CODE END 2 */
@@ -132,9 +131,6 @@ int main(void)
 				motorAlign(&runStateM1);
 			}
 			StallFlag = 0;
-			int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
-			bufStep = GET_STEP[bufStep];
-			runStateM1.curStep = bufStep;
 			if(runStateM1.dir == MOTOR_DIR_CCW)
 				runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.targetSpd - runStateM1.curSpd, &PIDM1struct));
 			else

@@ -120,7 +120,6 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj
  /home/minisentry/Code/BLDCtestRCT6/Core/Src/main.c
- /home/minisentry/Code/BLDCtestRCT6/UsrLib/dbgPrintLog.h
  /home/minisentry/Code/BLDCtestRCT6/UsrLib/motorDrv.h
  /home/minisentry/Code/BLDCtestRCT6/UsrLib/pid.h
  /home/minisentry/Code/BLDCtestRCT6/UsrLib/speedCalc.h
@@ -157,24 +156,12 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj
  /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
  /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h
- /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h
  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 

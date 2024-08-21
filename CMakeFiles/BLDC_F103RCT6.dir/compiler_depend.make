@@ -116,7 +116,6 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj: Core/Src/i2c.c \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: Core/Src/main.c \
-  UsrLib/dbgPrintLog.h \
   UsrLib/motorDrv.h \
   UsrLib/pid.h \
   UsrLib/speedCalc.h \
@@ -153,24 +152,12 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: Core/Src/main.c \
   Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
   Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
   Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
@@ -1242,6 +1229,8 @@ UsrLib/pid.c:
 
 UsrLib/motorDrv.c:
 
+UsrLib/dbgPrintLog.h:
+
 UsrLib/StateMachine.c:
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:
@@ -1253,6 +1242,8 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c:
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c:
 
 Core/Src/sysmem.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/time.h:
 
@@ -1270,6 +1261,12 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/select.h:
 
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
+
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h:
@@ -1280,19 +1277,11 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/signal.h:
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h:
+
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/endian.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_time.h:
-
-Core/Src/syscalls.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
 
@@ -1324,9 +1313,9 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/errno.h:
-
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/errno.h:
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 
@@ -1345,6 +1334,14 @@ UsrLib/StateMachine.h:
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:
 
 Drivers/CMSIS/Include/cmsis_compiler.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h:
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
 
@@ -1370,13 +1367,9 @@ Core/Src/dma.c:
 
 Core/Inc/dma.h:
 
-UsrLib/dbgPrintLog.h:
-
 Drivers/CMSIS/Include/core_cm3.h:
 
 Core/Inc/main.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
 
 Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
 
@@ -1388,29 +1381,17 @@ Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h:
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
-Core/Src/stm32f1xx_it.c:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h:
 
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h:
 
-UsrLib/speedCalc.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/types.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h:
 
 Drivers/CMSIS/Include/cmsis_gcc.h:
 
 Core/Src/main.c:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
 
@@ -1430,6 +1411,12 @@ Core/Inc/usart.h:
 
 Core/Inc/i2c.h:
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h:
+
+Core/Src/stm32f1xx_hal_msp.c:
+
 Core/Src/system_stm32f1xx.c:
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
@@ -1440,15 +1427,25 @@ Core/Inc/stm32f1xx_it.h:
 
 UsrLib/sysTickManipulator.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h:
-
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/types.h:
 
 Core/Inc/tim.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
+
+UsrLib/speedCalc.h:
+
+Core/Src/stm32f1xx_it.c:
+
+Core/Src/syscalls.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/types.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_time.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h:
 
@@ -1456,14 +1453,4 @@ Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h:
 
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c:
-
-Core/Src/stm32f1xx_hal_msp.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/endian.h:
