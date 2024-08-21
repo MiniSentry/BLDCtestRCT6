@@ -10,12 +10,9 @@
 
 #include "motorDrv.h"
 #include <stdint.h>
-#include "stm32f1xx_hal.h"
-#include "sysTickManipulator.h"
 
-#include "dbgPrintLog.h"
 
-void speedCalcInit();
+void speedCalcInit(void);
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 void updateState(runStateStruct* runState);
 float getVelocity(runStateStruct* runState);

@@ -1,0 +1,6 @@
+CompileFlags: # Tweak the parse settings, example directory given to show format
+  Add: 
+       - "-I/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/"
+       - "-Wno-unknown-warning-option"
+  Remove:
+      [-m*, -f*]

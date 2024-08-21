@@ -53,3 +53,6 @@ dkms.conf
 
 # Compile output directory
 Debug/
+
+# clangd dumping crap around
+.cache/

@@ -4,6 +4,8 @@
  *  Created on: Jul 22, 2024
  *      Author: minisentry
  */
+#include "sysTickManipulator.h"
+#include "dbgPrintLog.h"
 #include "speedCalc.h"
 #define _2PI 6.28318530718f
 #define PP 3
@@ -12,7 +14,7 @@ volatile uint8_t Hall_B_Status;
 volatile uint8_t Hall_C_Status;
 extern runStateStruct* runStateM1addr;			//so the ISR will be able to locate your motor's properties
 
-void speedCalcInit()
+void speedCalcInit(void)
 {
 	Hall_A_Status = 1;
 	Hall_B_Status = 1;
