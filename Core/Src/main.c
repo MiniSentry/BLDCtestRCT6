@@ -72,75 +72,75 @@ PIDstruct PIDM1struct;
   */
 int main(void)
 {
+	/* USER CODE BEGIN 1 */
+	/* USER CODE END 1 */
 
-  /* USER CODE BEGIN 1 */
-  static runStateStruct runStateM1;
-  runStateM1addr = &runStateM1;
-  float error;
-  float dbg_pid_output;
-  uint32_t dbg_start_time;
-  uint32_t dbg_end_time;
-  /* USER CODE END 1 */
+	/* MCU Configuration--------------------------------------------------------*/
 
-  /* MCU Configuration--------------------------------------------------------*/
+	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+	HAL_Init();
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	/* USER CODE BEGIN Init */
+	/* USER CODE END Init */
 
-  /* USER CODE BEGIN Init */
+	/* Configure the system clock */
+	SystemClock_Config();
 
-  /* USER CODE END Init */
+	/* USER CODE BEGIN SysInit */
+	speedCalcInit();
+	/* USER CODE END SysInit */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+	/* Initialize all configured peripherals */
+	MX_GPIO_Init();
+	MX_DMA_Init();
+	MX_I2C1_Init();
+	MX_TIM1_Init();
+	MX_UART4_Init();
+	/* USER CODE BEGIN 2 */
+	static runStateStruct runStateM1;
+	runStateM1addr = &runStateM1;
+	PIDstructInit(&PIDM1struct);
 
-  /* USER CODE BEGIN SysInit */
-  speedCalcInit();
-  /* USER CODE END SysInit */
+	resetState(&runStateM1);
+	resetMotor();
 
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_DMA_Init();
-  MX_I2C1_Init();
-  MX_TIM1_Init();
-  MX_UART4_Init();
-  /* USER CODE BEGIN 2 */
-  PIDstructInit(&PIDM1struct);
-  resetState(&runStateM1);
-  resetMotor();
-  runStateM1.pulse = 800;
-  runStateM1.dir = MOTOR_DIR_CCW;
-  runStateM1.targetSpd = 314.15927f;
-  for(uint16_t i=0; i<16000; i++)
-  {
-	  doPulse(&runStateM1);
-  }
-  /* USER CODE END 2 */
+	runStateM1.dir = MOTOR_DIR_CW;
+	runStateM1.targetSpd = -100.0f;
+	const int8_t GET_STEP[8] = {-1, 1, 3, 2, 5, 6, 4, -1};
+	int8_t StallFlag = 0;
+	//motorAlign(&runStateM1);
+	/* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-	doPulse(&runStateM1);
-	if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
+	/* Infinite loop */
+	/* USER CODE BEGIN WHILE */
+	while (1)
 	{
-		dbg_start_time=getCurrentMicros();
-		runStateM1.midFreqTaskFlag = 1;
-		TickPerMs = 0;
-		runStateM1.curSpd = getVelocity(&runStateM1);
-		error = runStateM1.targetSpd - runStateM1.curSpd;
-		dbg_pid_output = PIDoperator(error, &PIDM1struct);
-		runStateM1.pulse = (uint16_t)(dbg_pid_output * 133);
-		dbg_end_time = getCurrentMicros();
-		printf("[%ld]speed %f ", dbg_start_time, runStateM1.curSpd);
-		printf(" PID output :%f at[%ld]\n", dbg_pid_output, dbg_end_time);
+		/* USER CODE END WHILE */
+
+		/* USER CODE BEGIN 3 */
+		doPulse(&runStateM1);
+		if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
+		{
+			runStateM1.midFreqTaskFlag = 1;
+			TickPerMs = 0;
+			if (runStateM1.curSpd == 0.0f)
+				StallFlag++;
+			runStateM1.curSpd = getVelocity(&runStateM1);
+			if ((runStateM1.curSpd == 0.0f) && StallFlag >= 1)
+			{
+				motorAlign(&runStateM1);
+			}
+			StallFlag = 0;
+			int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
+			bufStep = GET_STEP[bufStep];
+			runStateM1.curStep = bufStep;
+			if(runStateM1.dir == MOTOR_DIR_CCW)
+				runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.targetSpd - runStateM1.curSpd, &PIDM1struct));
+			else
+				runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.curSpd - runStateM1.targetSpd, &PIDM1struct));
+		}
 	}
-	//HAL_Delay(1);
-  }
-  /* USER CODE END 3 */
+	/* USER CODE END 3 */
 }
 
 /**

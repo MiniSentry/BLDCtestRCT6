@@ -10,7 +10,6 @@ void resetState(runStateStruct* runState)
 {
 
 	runState->curStep = 1;
-	runState->prevStep = 1;
 	runState->pulse = 0;
 	runState->curSpd = 0;
 	runState->targetSpd = 0;
@@ -51,37 +50,6 @@ void setMotor(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC, uint8_t enA, ui
 	HAL_GPIO_WritePin(EN_W_GPIO_Port, EN_W_Pin, enC);
 }
 
-void readHall(runStateStruct* runState)
-{
-	uint8_t bufStep;
-	bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
-	runState->prevStep = runState->curStep;
-	switch(bufStep)
-	{
-		case 1:
-			runState->curStep = 1;
-			break;
-		case 2:
-			runState->curStep = 3;
-			break;
-		case 3:
-			runState->curStep = 2;
-			break;
-		case 4:
-			runState->curStep = 5;
-			break;
-		case 5:
-			runState->curStep = 6;
-			break;
-		case 6:
-			runState->curStep = 4;
-			break;
-		default:
-			// TODO: add error logger
-			break;
-	}
-}
-
 void doPulse(runStateStruct* runState)
 {	//	sets where current flows according to recorded rotor position
 	//	this is incomplete, read BLDC basics
@@ -111,35 +79,54 @@ void doPulse(runStateStruct* runState)
 	}
 	else
 	{
-		/*switch(runState->curStep)
+		switch(runState->curStep)
 		{
 			case 1:
-				setMotor(runState->pulse, 0, 0, 1, 0, 1);
-				break;
-			case 2:
-				setMotor(0, runState->pulse, 0, 0, 1, 1);
-				break;
-			case 3:
-				setMotor(0, runState->pulse, 0, 1, 1, 0);
-				break;
-			case 4:
 				setMotor(0, 0, runState->pulse, 1, 0, 1);
 				break;
-			case 5:
+			case 2:
 				setMotor(0, 0, runState->pulse, 0, 1, 1);
 				break;
-			case 6:
+			case 3:
 				setMotor(runState->pulse, 0, 0, 1, 1, 0);
 				break;
-		}*/
+			case 4:
+				setMotor(runState->pulse, 0, 0, 1, 0, 1);
+				break;
+			case 5:
+				setMotor(0, runState->pulse, 0, 0, 1, 1);
+				break;
+			case 6:
+				setMotor(0, runState->pulse, 0, 1, 1, 0);
+				break;
+		}
 	}
 }
 
-void moveMotor(runStateStruct* runState)
+void motorAlign(runStateStruct* runState)
 {
-	extern volatile uint8_t HallISRflag;
-	if (HallISRflag == 1)
-		readHall(runState);
-	HallISRflag = 0;
-
+	const int8_t GET_STEP[8] = {-1, 1, 3, 2, 5, 6, 4, -1};
+	runState->pulse = 100;
+	for(uint16_t j=0; j<10; j++)
+	{
+		if(runState->dir == MOTOR_DIR_CCW)
+		{
+			for(uint8_t i=1; i<7; i++)
+			{
+				HAL_Delay(10);
+				runState->curStep = i;
+				doPulse(runState);
+			}
+		}
+		else
+		{
+			for(uint8_t i=6; i>0; i--)
+			{
+				HAL_Delay(10);
+				runState->curStep = i;
+				doPulse(runState);
+			}
+		}
+	}
 }
+

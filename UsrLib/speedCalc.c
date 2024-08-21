@@ -10,9 +10,6 @@
 volatile uint8_t Hall_A_Status;
 volatile uint8_t Hall_B_Status;
 volatile uint8_t Hall_C_Status;
-volatile uint32_t dbg_time_enter;
-volatile uint32_t dbg_time_exit;
-volatile uint8_t dbg_flag;
 extern runStateStruct* runStateM1addr;			//so the ISR will be able to locate your motor's properties
 
 void speedCalcInit()
@@ -45,17 +42,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	//this is clearly non-portable, u
 
 void updateState(runStateStruct* runState)
 {
-	if(dbg_flag == 1)
-	{
-		dbg_flag = 0;
-		dbg_time_enter = getCurrentMicros();
-	}
-	else
-	{
-		dbg_flag = 1;
-		dbg_time_exit = getCurrentMicros();
-	}
-
 	uint32_t new_pulse_timestamp = getCurrentMicros();
 	//int8_t bufStep = Hall_A_Status + (Hall_B_Status << 1) + (Hall_C_Status << 2);
 	int8_t bufStep = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN) + (HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN) << 1) + (HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN) << 2);
@@ -63,7 +49,7 @@ void updateState(runStateStruct* runState)
 	// This magic array will allow you to get current step number labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
 	//	using just raw results from your hall sensor.
 	bufStep = GET_STEP[bufStep];
-	//printf("time %lu step %d\n", new_pulse_timestamp, bufStep);
+	printf("time %lu step %d\n", new_pulse_timestamp, bufStep);
 	if(bufStep == -1)
 		return;
 	if (bufStep == runState->curStep)
@@ -85,7 +71,6 @@ void updateState(runStateStruct* runState)
 			runState->ActualDir = -1;	//cw
 	}
 
-	runState->prevStep = runState->curStep;	//TODO: we might want to just remove prevStep from the structure because it is useless
 	runState->curStep = bufStep;
 
     // glitch avoidance #2 changes in direction can cause velocity spikes.  Possible improvements needed in this area
@@ -107,7 +92,6 @@ void updateState(runStateStruct* runState)
 	}
 	runState->pulse_timestamp = new_pulse_timestamp;
 	runState->lastActualDir = runState->ActualDir;	//TODO: u might want to remove a dir from the struct as well and edit the implementation here
-
 }
 
 float getVelocity(runStateStruct* runState)

@@ -57,7 +57,6 @@ typedef struct
 	uint32_t cntMFtask;
 	uint32_t tPerStep[6];
 	int8_t curStep;
-	int8_t prevStep;
 	uint16_t pulse;
 	float curSpd;
 	float targetSpd;
@@ -76,7 +75,9 @@ void resetState(runStateStruct* runState);
 void resetMotor(void);
 void setPWM(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC);
 void setMotor(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC, uint8_t enA, uint8_t enB, uint8_t enC);
-void readHall(runStateStruct* runState);
 void doPulse(runStateStruct* runState);
+void motorAlign(runStateStruct* runState);
 
 #endif /* INC_MOTORDRV_H_ */
+
+
