@@ -69,7 +69,6 @@ typedef struct
 	uint32_t pulse_timestamp;
 }runStateStruct;
 
-//static runStateStruct runStateM1;
 
 void resetState(runStateStruct* runState);
 void resetMotor(void);

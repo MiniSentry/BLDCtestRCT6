@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
 #include "dma.h"
 #include "i2c.h"
 #include "tim.h"
@@ -50,20 +51,19 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+extern runStateStruct runStateM1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint32_t TickPerMs = 0;
-runStateStruct* runStateM1addr;
-PIDstruct PIDM1struct;
+
 /* USER CODE END 0 */
 
 /**
@@ -79,6 +79,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+
   HAL_Init();
 
   /* USER CODE BEGIN Init */
@@ -98,18 +99,26 @@ int main(void)
   MX_TIM1_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-	static runStateStruct runStateM1;
-	runStateM1addr = &runStateM1;
+  extern PIDstruct PIDM1struct;
 	PIDstructInit(&PIDM1struct);
-
+  
+  
 	resetState(&runStateM1);
+
 	resetMotor();
 
-	runStateM1.dir = MOTOR_DIR_CCW;
-	runStateM1.targetSpd = 50.0f;
-	int8_t StallFlag = 0;
-	//motorAlign(&runStateM1);
+	runStateM1.dir = MOTOR_DIR_CW;
+	runStateM1.targetSpd = -50.0f;
+
   /* USER CODE END 2 */
+
+  /* Call init function for freertos objects (in cmsis_os2.c) */
+  MX_FREERTOS_Init();
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -118,24 +127,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		doPulse(&runStateM1);
-		if (TickPerMs >= MID_FREQ_TASK_INTERVAL)
-		{
-			runStateM1.midFreqTaskFlag = 1;
-			TickPerMs = 0;
-			if (runStateM1.curSpd == 0.0f)
-				StallFlag++;
-			runStateM1.curSpd = getVelocity(&runStateM1);
-			if ((runStateM1.curSpd == 0.0f) && StallFlag >= 1)
-			{
-				motorAlign(&runStateM1);
-			}
-			StallFlag = 0;
-			if(runStateM1.dir == MOTOR_DIR_CCW)
-				runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.targetSpd - runStateM1.curSpd, &PIDM1struct));
-			else
-				runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.curSpd - runStateM1.targetSpd, &PIDM1struct));
-		}
+
 	}
   /* USER CODE END 3 */
 }
@@ -186,6 +178,27 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
+
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM8 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+  	doPulse(&runStateM1);
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM8) {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.

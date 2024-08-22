@@ -14,15 +14,15 @@
 uint32_t getCurrentMicros(void)
 {
   uint32_t m0 = HAL_GetTick();
-  __IO uint32_t u0 = SysTick->VAL;
+  __IO uint32_t u0 = TIM8->CNT;
   uint32_t m1 = HAL_GetTick();
-  __IO uint32_t u1 = SysTick->VAL;
-  const uint32_t tms = SysTick->LOAD + 1;
+  __IO uint32_t u1 = TIM8->CNT;
+  //const uint32_t tms = TIM8->ARR + 1;
 
   if (m1 != m0) {
-    return (m1 * 1000 + ((tms - u1) * 1000) / tms);
+    return (m1 * 1000 + u1);
   } else {
-    return (m0 * 1000 + ((tms - u0) * 1000) / tms);
+    return (m0 * 1000 + u0);
   }
 }
 

@@ -10,6 +10,8 @@
 
 #include "motorDrv.h"
 #include <stdint.h>
+#include "sysTickManipulator.h"
+#include "dbgPrintLog.h"
 
 
 void speedCalcInit(void);
