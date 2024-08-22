@@ -52,7 +52,6 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     UsrLib/motorDrv.c
     UsrLib/pid.c
     UsrLib/speedCalc.c
-    UsrLib/StateMachine.c
     UsrLib/sysTickManipulator.c
 )
 

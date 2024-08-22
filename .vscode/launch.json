@@ -5,6 +5,46 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "cwd": "${workspaceFolder}",
+            "executable": "./BLDC_F103RCT6.elf",
+            "name": "JLink",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "stm32f103rc",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "jlink",
+            "serverArgs": ["-speed", "10000"],
+            "swoConfig":
+            {
+                "enabled":true,
+                "source":"probe",
+                "swoFrequency": 1000000,
+                "cpuFrequency":72000000,
+                "decoders": [
+                    {
+                        "port": 0,
+                        "type": "console",
+                        "label": "SWO output",
+                        "encoding":"ascii"
+                    }
+                ]
+            }
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "./BLDC_F103RCT6.elf",
+            "name": "OpenOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["target/stm32f1x.cfg"],
+            "searchDir": [],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "device": "STM32F103RC"
+        },
+        {
             "name": "PyOCD",
             "cwd": "${workspaceFolder}",
             "executable": "./BLDC_F103RCT6.elf",

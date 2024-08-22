@@ -125,24 +125,10 @@ CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.s"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/minisentry/Code/BLDCtestRCT6/UsrLib/speedCalc.c -o CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.s
 
-CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
-CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj: UsrLib/StateMachine.c
-CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj"
-	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj -c /home/minisentry/Code/BLDCtestRCT6/UsrLib/StateMachine.c
-
-CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.i"
-	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/minisentry/Code/BLDCtestRCT6/UsrLib/StateMachine.c > CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.i
-
-CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.s"
-	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/minisentry/Code/BLDCtestRCT6/UsrLib/StateMachine.c -o CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.s
-
 CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj: UsrLib/sysTickManipulator.c
 CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj -c /home/minisentry/Code/BLDCtestRCT6/UsrLib/sysTickManipulator.c
 
 CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: Core/Src/main.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/main.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj: Core/Src/gpio.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/gpio.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj: Core/Src/dma.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/dma.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj: Core/Src/i2c.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/i2c.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.i: cmake_force
@@ -212,7 +198,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj: Core/Src/tim.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/tim.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.i: cmake_force
@@ -226,7 +212,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/tim.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj: Core/Src/usart.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/usart.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.i: cmake_force
@@ -240,7 +226,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/usart.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj: Core/Src/stm32f1xx_it.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/stm32f1xx_it.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -254,7 +240,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj: Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/stm32f1xx_hal_msp.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -268,7 +254,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -282,7 +268,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
@@ -296,7 +282,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -310,7 +296,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s:
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -324,7 +310,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -338,7 +324,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -352,7 +338,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -366,7 +352,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -380,7 +366,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cort
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -394,7 +380,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -408,7 +394,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flas
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -422,7 +408,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flas
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -436,7 +422,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -450,7 +436,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -464,7 +450,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
@@ -478,7 +464,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj: Core/Src/system_stm32f1xx.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/system_stm32f1xx.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
@@ -492,7 +478,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj: Core/Src/sysmem.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/sysmem.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.i: cmake_force
@@ -506,7 +492,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj: Core/Src/syscalls.c
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj: CMakeFiles/BLDC_F103RCT6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj -c /home/minisentry/Code/BLDCtestRCT6/Core/Src/syscalls.c
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.i: cmake_force
@@ -519,7 +505,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.obj: CMakeFiles/BLDC_F103RCT6.dir/flags.make
 CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.obj: startup_stm32f103xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.obj"
 	/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.obj -c /home/minisentry/Code/BLDCtestRCT6/startup_stm32f103xe.s
 
 CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.i: cmake_force
@@ -536,7 +522,6 @@ BLDC_F103RCT6_OBJECTS = \
 "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/motorDrv.c.obj" \
 "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/pid.c.obj" \
 "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.obj" \
-"CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj" \
 "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj" \
 "CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj" \
 "CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj" \
@@ -573,7 +558,6 @@ BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/UsrLib/motorDrv.c.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/UsrLib/pid.c.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.obj
-BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj
@@ -604,7 +588,7 @@ BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/Core/Src/syscalls.c.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.obj
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/build.make
 BLDC_F103RCT6.elf: CMakeFiles/BLDC_F103RCT6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C executable BLDC_F103RCT6.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/minisentry/Code/BLDCtestRCT6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking C executable BLDC_F103RCT6.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BLDC_F103RCT6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

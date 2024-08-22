@@ -105,8 +105,8 @@ int main(void)
 	resetState(&runStateM1);
 	resetMotor();
 
-	runStateM1.dir = MOTOR_DIR_CW;
-	runStateM1.targetSpd = -100.0f;
+	runStateM1.dir = MOTOR_DIR_CCW;
+	runStateM1.targetSpd = 50.0f;
 	int8_t StallFlag = 0;
 	//motorAlign(&runStateM1);
   /* USER CODE END 2 */

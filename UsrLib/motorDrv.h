@@ -73,7 +73,6 @@ typedef struct
 
 void resetState(runStateStruct* runState);
 void resetMotor(void);
-void setPWM(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC);
 void setMotor(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC, uint8_t enA, uint8_t enB, uint8_t enC);
 void doPulse(runStateStruct* runState);
 void motorAlign(runStateStruct* runState);

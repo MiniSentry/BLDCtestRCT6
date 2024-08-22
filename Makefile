@@ -753,30 +753,6 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 
-UsrLib/StateMachine.obj: UsrLib/StateMachine.c.obj
-.PHONY : UsrLib/StateMachine.obj
-
-# target to build an object file
-UsrLib/StateMachine.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj
-.PHONY : UsrLib/StateMachine.c.obj
-
-UsrLib/StateMachine.i: UsrLib/StateMachine.c.i
-.PHONY : UsrLib/StateMachine.i
-
-# target to preprocess a source file
-UsrLib/StateMachine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.i
-.PHONY : UsrLib/StateMachine.c.i
-
-UsrLib/StateMachine.s: UsrLib/StateMachine.c.s
-.PHONY : UsrLib/StateMachine.s
-
-# target to generate assembly for a file
-UsrLib/StateMachine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.s
-.PHONY : UsrLib/StateMachine.c.s
-
 UsrLib/dbgPrintLog.obj: UsrLib/dbgPrintLog.c.obj
 .PHONY : UsrLib/dbgPrintLog.obj
 
@@ -992,9 +968,6 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s"
-	@echo "... UsrLib/StateMachine.obj"
-	@echo "... UsrLib/StateMachine.i"
-	@echo "... UsrLib/StateMachine.s"
 	@echo "... UsrLib/dbgPrintLog.obj"
 	@echo "... UsrLib/dbgPrintLog.i"
 	@echo "... UsrLib/dbgPrintLog.s"

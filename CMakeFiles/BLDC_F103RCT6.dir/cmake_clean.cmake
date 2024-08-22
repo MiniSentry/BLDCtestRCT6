@@ -53,8 +53,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
   "CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj.d"
-  "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj"
-  "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/motorDrv.c.obj"

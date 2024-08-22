@@ -35,16 +35,11 @@ void resetMotor(void)
 
 }
 
-void setPWM(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC)	//period is 1600
-{
+void setMotor(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC, uint8_t enA, uint8_t enB, uint8_t enC)
+{	// sets pulse and EN of each phase
 	__HAL_TIM_SET_COMPARE(&MOTOR_TIM, MOTOR_U_CHANNEL, pulseA);
 	__HAL_TIM_SET_COMPARE(&MOTOR_TIM, MOTOR_V_CHANNEL, pulseB);
 	__HAL_TIM_SET_COMPARE(&MOTOR_TIM, MOTOR_W_CHANNEL, pulseC);
-}
-
-void setMotor(uint16_t pulseA, uint16_t pulseB, uint16_t pulseC, uint8_t enA, uint8_t enB, uint8_t enC)
-{	// sets pulse and EN of each phase
-	setPWM(pulseA, pulseB, pulseC);
 	HAL_GPIO_WritePin(EN_U_GPIO_Port, EN_U_Pin, enA);
 	HAL_GPIO_WritePin(EN_V_GPIO_Port, EN_V_Pin, enB);
 	HAL_GPIO_WritePin(EN_W_GPIO_Port, EN_W_Pin, enC);
@@ -106,25 +101,22 @@ void doPulse(runStateStruct* runState)
 void motorAlign(runStateStruct* runState)
 {
 	runState->pulse = 100;
-	for(uint16_t j=0; j<10; j++)
+	if(runState->dir == MOTOR_DIR_CCW)
 	{
-		if(runState->dir == MOTOR_DIR_CCW)
+		for(uint8_t i=1; i<7; i++)
 		{
-			for(uint8_t i=1; i<7; i++)
-			{
-				HAL_Delay(10);
-				runState->curStep = i;
-				doPulse(runState);
-			}
+			HAL_Delay(10);
+			runState->curStep = i;
+			doPulse(runState);
 		}
-		else
+	}
+	else
+	{
+		for(uint8_t i=6; i>0; i--)
 		{
-			for(uint8_t i=6; i>0; i--)
-			{
-				HAL_Delay(10);
-				runState->curStep = i;
-				doPulse(runState);
-			}
+			HAL_Delay(10);
+			runState->curStep = i;
+			doPulse(runState);
 		}
 	}
 }

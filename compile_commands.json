@@ -25,12 +25,6 @@
 },
 {
   "directory": "/home/minisentry/Code/BLDCtestRCT6",
-  "command": "/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -I/home/minisentry/Code/BLDCtestRCT6/UsrLib -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Core/Inc -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj -c /home/minisentry/Code/BLDCtestRCT6/UsrLib/StateMachine.c",
-  "file": "/home/minisentry/Code/BLDCtestRCT6/UsrLib/StateMachine.c",
-  "output": "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj"
-},
-{
-  "directory": "/home/minisentry/Code/BLDCtestRCT6",
   "command": "/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -I/home/minisentry/Code/BLDCtestRCT6/UsrLib -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Core/Inc -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj -c /home/minisentry/Code/BLDCtestRCT6/UsrLib/sysTickManipulator.c",
   "file": "/home/minisentry/Code/BLDCtestRCT6/UsrLib/sysTickManipulator.c",
   "output": "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj"

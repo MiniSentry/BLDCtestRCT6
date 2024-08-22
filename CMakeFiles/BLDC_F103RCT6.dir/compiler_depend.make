@@ -960,48 +960,6 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
-CMakeFiles/BLDC_F103RCT6.dir/UsrLib/StateMachine.c.obj: UsrLib/StateMachine.c \
-  UsrLib/StateMachine.h \
-  UsrLib/motorDrv.h \
-  UsrLib/sysTickManipulator.h \
-  Core/Inc/gpio.h \
-  Core/Inc/main.h \
-  Core/Inc/stm32f1xx_hal_conf.h \
-  Core/Inc/tim.h \
-  Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
-  Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
-  Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  Drivers/CMSIS/Include/cmsis_compiler.h \
-  Drivers/CMSIS/Include/cmsis_gcc.h \
-  Drivers/CMSIS/Include/cmsis_version.h \
-  Drivers/CMSIS/Include/core_cm3.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
-  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
-  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
-
 CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj: UsrLib/dbgPrintLog.c \
   UsrLib/dbgPrintLog.h \
   Core/Inc/stm32f1xx_hal_conf.h \
@@ -1231,8 +1189,6 @@ UsrLib/motorDrv.c:
 
 UsrLib/dbgPrintLog.h:
 
-UsrLib/StateMachine.c:
-
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c:
@@ -1326,8 +1282,6 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
 Core/Src/tim.c:
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
-
-UsrLib/StateMachine.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h:
 
