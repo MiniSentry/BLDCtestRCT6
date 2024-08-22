@@ -1,0 +1,23 @@
+How this BLDC 6-step driver works:
+
+        Configures PWM outputs, Hall sensor inputs(via EXTI), and initializes all structures
+    
+        Enables Hall sensor EXTI which triggers on ANY edge of the 3 hall pins. During the 
+    interrupt, a new step is identified, its exact time captured (storaged along with 5 
+    other timestamps from former captures, in us, used for an averaging speed calculation. 
+    Using 6 samples for averaging is tested to be better than 8, probably due to 6 steps makes a full cycle),
+    the motor's actual direction is detected, and electrical loop number is counted (currently unused)
+
+        Runs doPulse() at 1000 Hz, which is located in TIM8 interrupt callback 
+    (TIM8 is used as HAL timebase here due to sysTick is occuplied by FreeRTOS)
+    I tried to run doPulse() within the Hall sensor EXTI, but that gave horrible results and I
+    just could not figure out why. I might try again later.
+
+        Creates a task that calculates the speed of the motor first (average of 6 samples from Hall sensor),
+    then crams that into a PID speed loop, its result converted and storaged in runStateM1->pulse.
+    The PID loop takes about 5ms to execute once on STM32F103RCT6 (which does NOT have a FPU), a painfully
+    slow speed but is somehow still good enough to control the motor. I will use something better next time.
+
+Other notes:
+        How motor direction changes could probably be improved, but I found my specifc motor works way better in CCW and i DO NOT KNOW why.
+    Maybe I should just ditch Hall sensors and convert this project into sensorless.

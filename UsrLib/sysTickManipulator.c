@@ -8,6 +8,8 @@
 
 /**
   * @brief  Function called to read the current micro second
+  * yes i am aware that this is a hack so you WILL need to edit
+  * this each time you port this bloody code
   * @param  None
   * @retval None
   */
