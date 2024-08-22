@@ -29,6 +29,10 @@
                         "encoding":"ascii"
                     }
                 ]
+            },
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4,
             }
         },
         {

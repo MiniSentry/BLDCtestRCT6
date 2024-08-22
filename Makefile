@@ -153,6 +153,30 @@ Core/Src/dma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.s
 .PHONY : Core/Src/dma.c.s
 
+Core/Src/freertos.obj: Core/Src/freertos.c.obj
+.PHONY : Core/Src/freertos.obj
+
+# target to build an object file
+Core/Src/freertos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/freertos.c.obj
+.PHONY : Core/Src/freertos.c.obj
+
+Core/Src/freertos.i: Core/Src/freertos.c.i
+.PHONY : Core/Src/freertos.i
+
+# target to preprocess a source file
+Core/Src/freertos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/freertos.c.i
+.PHONY : Core/Src/freertos.c.i
+
+Core/Src/freertos.s: Core/Src/freertos.c.s
+.PHONY : Core/Src/freertos.s
+
+# target to generate assembly for a file
+Core/Src/freertos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/freertos.c.s
+.PHONY : Core/Src/freertos.c.s
+
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
 
@@ -248,6 +272,30 @@ Core/Src/stm32f1xx_hal_msp.s: Core/Src/stm32f1xx_hal_msp.c.s
 Core/Src/stm32f1xx_hal_msp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.s
 .PHONY : Core/Src/stm32f1xx_hal_msp.c.s
+
+Core/Src/stm32f1xx_hal_timebase_tim.obj: Core/Src/stm32f1xx_hal_timebase_tim.c.obj
+.PHONY : Core/Src/stm32f1xx_hal_timebase_tim.obj
+
+# target to build an object file
+Core/Src/stm32f1xx_hal_timebase_tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj
+.PHONY : Core/Src/stm32f1xx_hal_timebase_tim.c.obj
+
+Core/Src/stm32f1xx_hal_timebase_tim.i: Core/Src/stm32f1xx_hal_timebase_tim.c.i
+.PHONY : Core/Src/stm32f1xx_hal_timebase_tim.i
+
+# target to preprocess a source file
+Core/Src/stm32f1xx_hal_timebase_tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.i
+.PHONY : Core/Src/stm32f1xx_hal_timebase_tim.c.i
+
+Core/Src/stm32f1xx_hal_timebase_tim.s: Core/Src/stm32f1xx_hal_timebase_tim.c.s
+.PHONY : Core/Src/stm32f1xx_hal_timebase_tim.s
+
+# target to generate assembly for a file
+Core/Src/stm32f1xx_hal_timebase_tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.s
+.PHONY : Core/Src/stm32f1xx_hal_timebase_tim.c.s
 
 Core/Src/stm32f1xx_it.obj: Core/Src/stm32f1xx_it.c.obj
 .PHONY : Core/Src/stm32f1xx_it.obj
@@ -753,6 +801,246 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/croutine.obj: Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/croutine.i: Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/croutine.s: Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.obj: Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.i: Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.s: Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/list.obj: Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/list.i: Middlewares/Third_Party/FreeRTOS/Source/list.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/list.s: Middlewares/Third_Party/FreeRTOS/Source/list.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.obj: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.i: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.s: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.obj: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.i: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.s: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/queue.obj: Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/queue.i: Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/queue.s: Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.obj: Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.i: Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.s: Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/tasks.obj: Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/tasks.i: Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/tasks.s: Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
+
+Middlewares/Third_Party/FreeRTOS/Source/timers.obj: Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.obj
+
+# target to build an object file
+Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+
+Middlewares/Third_Party/FreeRTOS/Source/timers.i: Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FreeRTOS/Source/timers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
+
+Middlewares/Third_Party/FreeRTOS/Source/timers.s: Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
+.PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
+
 UsrLib/dbgPrintLog.obj: UsrLib/dbgPrintLog.c.obj
 .PHONY : UsrLib/dbgPrintLog.obj
 
@@ -893,6 +1181,9 @@ help:
 	@echo "... Core/Src/dma.obj"
 	@echo "... Core/Src/dma.i"
 	@echo "... Core/Src/dma.s"
+	@echo "... Core/Src/freertos.obj"
+	@echo "... Core/Src/freertos.i"
+	@echo "... Core/Src/freertos.s"
 	@echo "... Core/Src/gpio.obj"
 	@echo "... Core/Src/gpio.i"
 	@echo "... Core/Src/gpio.s"
@@ -905,6 +1196,9 @@ help:
 	@echo "... Core/Src/stm32f1xx_hal_msp.obj"
 	@echo "... Core/Src/stm32f1xx_hal_msp.i"
 	@echo "... Core/Src/stm32f1xx_hal_msp.s"
+	@echo "... Core/Src/stm32f1xx_hal_timebase_tim.obj"
+	@echo "... Core/Src/stm32f1xx_hal_timebase_tim.i"
+	@echo "... Core/Src/stm32f1xx_hal_timebase_tim.s"
 	@echo "... Core/Src/stm32f1xx_it.obj"
 	@echo "... Core/Src/stm32f1xx_it.i"
 	@echo "... Core/Src/stm32f1xx_it.s"
@@ -968,6 +1262,36 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/croutine.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/croutine.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/croutine.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/event_groups.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/event_groups.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/event_groups.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/list.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/list.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/list.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/queue.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/queue.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/queue.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/tasks.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/tasks.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/tasks.s"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.obj"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.i"
+	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.s"
 	@echo "... UsrLib/dbgPrintLog.obj"
 	@echo "... UsrLib/dbgPrintLog.i"
 	@echo "... UsrLib/dbgPrintLog.s"

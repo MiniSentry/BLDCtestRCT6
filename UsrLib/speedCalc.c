@@ -4,15 +4,13 @@
  *  Created on: Jul 22, 2024
  *      Author: minisentry
  */
-#include "sysTickManipulator.h"
-#include "dbgPrintLog.h"
 #include "speedCalc.h"
 #define _2PI 6.28318530718f
 #define PP 3
 volatile uint8_t Hall_A_Status;
 volatile uint8_t Hall_B_Status;
 volatile uint8_t Hall_C_Status;
-extern runStateStruct* runStateM1addr;			//so the ISR will be able to locate your motor's properties
+extern runStateStruct runStateM1;			//so the ISR will be able to locate your motor's properties
 
 void speedCalcInit(void)
 {
@@ -27,15 +25,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)	//this is clearly non-portable, u
 	{
 		case HALL_A_PIN:
 			//Hall_A_Status = HAL_GPIO_ReadPin(HALL_A_GPIO_Port, HALL_A_PIN);
-			updateState(runStateM1addr);
+			updateState(&runStateM1);
 			break;
 		case HALL_B_PIN:
 			//Hall_B_Status = HAL_GPIO_ReadPin(HALL_B_GPIO_Port, HALL_B_PIN);
-			updateState(runStateM1addr);
+			updateState(&runStateM1);
 			break;
 		case HALL_C_PIN:
 			//Hall_C_Status = HAL_GPIO_ReadPin(HALL_C_GPIO_Port, HALL_C_PIN);
-			updateState(runStateM1addr);
+			updateState(&runStateM1);
 			break;
 		default:
 			break;
@@ -51,7 +49,7 @@ void updateState(runStateStruct* runState)
 	// This magic array will allow you to get current step number labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
 	//	using just raw results from your hall sensor.
 	bufStep = GET_STEP[bufStep];
-	printf("time %lu step %d\n", new_pulse_timestamp, bufStep);
+	printf("[%ld]step: %d\n", new_pulse_timestamp, bufStep);
 	if(bufStep == -1)
 		return;
 	if (bufStep == runState->curStep)
@@ -94,6 +92,7 @@ void updateState(runStateStruct* runState)
 	}
 	runState->pulse_timestamp = new_pulse_timestamp;
 	runState->lastActualDir = runState->ActualDir;	//TODO: u might want to remove a dir from the struct as well and edit the implementation here
+
 }
 
 float getVelocity(runStateStruct* runState)

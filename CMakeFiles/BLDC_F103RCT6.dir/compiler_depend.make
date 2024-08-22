@@ -39,6 +39,77 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/dma.c.obj: Core/Src/dma.c \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
+CMakeFiles/BLDC_F103RCT6.dir/Core/Src/freertos.c.obj: Core/Src/freertos.c \
+  UsrLib/dbgPrintLog.h \
+  UsrLib/motorDrv.h \
+  UsrLib/pid.h \
+  UsrLib/speedCalc.h \
+  UsrLib/sysTickManipulator.h \
+  Core/Inc/FreeRTOSConfig.h \
+  Core/Inc/gpio.h \
+  Core/Inc/main.h \
+  Core/Inc/stm32f1xx_hal_conf.h \
+  Core/Inc/tim.h \
+  Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+  Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  Drivers/CMSIS/Include/cmsis_compiler.h \
+  Drivers/CMSIS/Include/cmsis_gcc.h \
+  Drivers/CMSIS/Include/cmsis_version.h \
+  Drivers/CMSIS/Include/core_cm3.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/gpio.c.obj: Core/Src/gpio.c \
   Core/Inc/gpio.h \
   Core/Inc/main.h \
@@ -116,10 +187,12 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/i2c.c.obj: Core/Src/i2c.c \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
 CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: Core/Src/main.c \
+  UsrLib/dbgPrintLog.h \
   UsrLib/motorDrv.h \
   UsrLib/pid.h \
   UsrLib/speedCalc.h \
   UsrLib/sysTickManipulator.h \
+  Core/Inc/FreeRTOSConfig.h \
   Core/Inc/dma.h \
   Core/Inc/gpio.h \
   Core/Inc/i2c.h \
@@ -127,6 +200,69 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: Core/Src/main.c \
   Core/Inc/stm32f1xx_hal_conf.h \
   Core/Inc/tim.h \
   Core/Inc/usart.h \
+  Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+  Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  Drivers/CMSIS/Include/cmsis_compiler.h \
+  Drivers/CMSIS/Include/cmsis_gcc.h \
+  Drivers/CMSIS/Include/cmsis_version.h \
+  Drivers/CMSIS/Include/core_cm3.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj: Core/Src/stm32f1xx_hal_msp.c \
+  Core/Inc/main.h \
+  Core/Inc/stm32f1xx_hal_conf.h \
   Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
   Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
   Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
@@ -161,8 +297,7 @@ CMakeFiles/BLDC_F103RCT6.dir/Core/Src/main.c.obj: Core/Src/main.c \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
-CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_msp.c.obj: Core/Src/stm32f1xx_hal_msp.c \
-  Core/Inc/main.h \
+CMakeFiles/BLDC_F103RCT6.dir/Core/Src/stm32f1xx_hal_timebase_tim.c.obj: Core/Src/stm32f1xx_hal_timebase_tim.c \
   Core/Inc/stm32f1xx_hal_conf.h \
   Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
   Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
@@ -960,6 +1095,344 @@ CMakeFiles/BLDC_F103RCT6.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c \
+  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+  Core/Inc/FreeRTOSConfig.h \
+  Drivers/CMSIS/Include/cmsis_gcc.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: Middlewares/Third_Party/FreeRTOS/Source/list.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.obj: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: Middlewares/Third_Party/FreeRTOS/Source/queue.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: Middlewares/Third_Party/FreeRTOS/Source/tasks.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
+CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: Middlewares/Third_Party/FreeRTOS/Source/timers.c \
+  Core/Inc/FreeRTOSConfig.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+
 CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj: UsrLib/dbgPrintLog.c \
   UsrLib/dbgPrintLog.h \
   Core/Inc/stm32f1xx_hal_conf.h \
@@ -1181,230 +1654,296 @@ CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj: UsrLib/sysTickMani
   /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
 
-UsrLib/speedCalc.c:
+UsrLib/sysTickManipulator.c:
 
 UsrLib/pid.c:
 
 UsrLib/motorDrv.c:
 
-UsrLib/dbgPrintLog.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c:
-
-Core/Src/sysmem.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/time.h:
-
 UsrLib/dbgPrintLog.c:
 
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
+Middlewares/Third_Party/FreeRTOS/Source/timers.c:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/timespec.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/times.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/time.h:
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/signal.h:
+Middlewares/Third_Party/FreeRTOS/Source/queue.c:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/select.h:
+Middlewares/Third_Party/FreeRTOS/Source/list.c:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/errno.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/signal.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h:
-
-Core/Src/i2c.c:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
-
-Core/Src/usart.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/sched.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/errno.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
-
-Core/Src/tim.c:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:
-
-Drivers/CMSIS/Include/cmsis_compiler.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
-
-Core/Inc/stm32f1xx_hal_conf.h:
-
-UsrLib/sysTickManipulator.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stat.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/time.h:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h:
-
-Core/Src/dma.c:
-
-Core/Inc/dma.h:
-
-Drivers/CMSIS/Include/core_cm3.h:
-
-Core/Inc/main.h:
-
-Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
-
-Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h:
 
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
 
-Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
 
-Drivers/CMSIS/Include/cmsis_gcc.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
 
-Core/Src/main.c:
+Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:
 
-Core/Src/gpio.c:
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:
 
-Drivers/CMSIS/Include/cmsis_version.h:
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
 
-Core/Inc/gpio.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 
-UsrLib/pid.h:
+Core/Inc/stm32f1xx_hal_conf.h:
 
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
 
-Core/Inc/usart.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h:
-
-Core/Inc/i2c.h:
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h:
-
-Core/Src/stm32f1xx_hal_msp.c:
-
-Core/Src/system_stm32f1xx.c:
-
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
-
-UsrLib/motorDrv.h:
-
-Core/Inc/stm32f1xx_it.h:
-
-UsrLib/sysTickManipulator.h:
-
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/types.h:
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 
 Core/Inc/tim.h:
 
-Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/types.h:
+
+Core/Inc/stm32f1xx_it.h:
+
+Core/Inc/gpio.h:
+
+Drivers/CMSIS/Include/cmsis_version.h:
+
+UsrLib/pid.h:
+
+UsrLib/motorDrv.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h:
+
+Core/Src/system_stm32f1xx.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
+
+Drivers/CMSIS/Include/cmsis_gcc.h:
+
+UsrLib/speedCalc.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h:
+
+Core/Inc/i2c.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:
 
 UsrLib/speedCalc.h:
 
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
+
 Core/Src/stm32f1xx_it.c:
 
-Core/Src/syscalls.c:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/types.h:
+Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
+Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_time.h:
+Middlewares/Third_Party/FreeRTOS/Source/croutine.c:
 
-/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h:
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c:
+
+Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
+
+Core/Inc/main.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/tasks.c:
+
+Drivers/CMSIS/Include/core_cm3.h:
+
+UsrLib/dbgPrintLog.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:
+
+UsrLib/sysTickManipulator.h:
+
+Core/Inc/dma.h:
+
+Core/Src/dma.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/time.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
 
 Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h:
 
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h:
 
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_time.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h:
+
+Drivers/CMSIS/Include/cmsis_compiler.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
+
+Core/Src/tim.c:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/errno.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.c:
+
+Core/Src/usart.c:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stat.h:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/reent.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/signal.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/errno.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h:
+
+Core/Src/stm32f1xx_hal_msp.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/sched.h:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h:
+
+Core/Inc/FreeRTOSConfig.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+
+Core/Src/gpio.c:
+
+Core/Src/i2c.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/times.h:
+
+Core/Src/main.c:
+
+Core/Inc/usart.h:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
+
+Core/Src/stm32f1xx_hal_timebase_tim.c:
+
+Core/Src/syscalls.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
+
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:
+
+Core/Src/freertos.c:
+
 /home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/endian.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/types.h:
+
+Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/select.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/signal.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/time.h:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/timespec.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/time.h:
+
+/home/minisentry/Code/armEnv/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h:
+
+Core/Src/sysmem.c:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c:
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:
