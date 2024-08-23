@@ -3,6 +3,10 @@
 #include "stm32f1xx_hal_uart.h"
 #include "usart.h"
 
+/*
+  This uart protocol is designed to be looped in a RTOS environment as a task
+  it roughly implements a MODBUS like protocol, allowing a more robust transfer
+*/
 #define DEVICE_ADDR 0xAA
 uint8_t uartRxBuffer[32] = {0};
 volatile uint8_t uartRxFinishFlag = 0;
