@@ -109,7 +109,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* USER CODE BEGIN RTOS_THREADS */
-  //xTaskCreate(vMotorPID, "MotorPID", 64, NULL, 0, NULL);
+  xTaskCreate(vMotorPID, "MotorPID", 64, NULL, 0, NULL);
   xTaskCreate(vUartProtocol, "UART Protocol", 128, NULL, 0, NULL);
   /* USER CODE END RTOS_THREADS */
 
@@ -120,16 +120,18 @@ void MX_FREERTOS_Init(void) {
 
 void vMotorPID(void * pvParameters)
 {
-  static int8_t StallFlag = 0;
+  static uint8_t StallFlag;
   
   for(;;)
   {
     if (runStateM1.curSpd == 0.0f)
       StallFlag++;
     runStateM1.curSpd = getVelocity(&runStateM1);
-    if ((runStateM1.curSpd == 0.0f) && StallFlag >= 100)
+    if ((runStateM1.curSpd == 0.0f) && StallFlag >= 200)
+    {
       motorAlign(&runStateM1);
-    StallFlag = 0;
+      StallFlag = 0;
+    }
     if(runStateM1.dir == MOTOR_DIR_CCW)
       runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.targetSpd - runStateM1.curSpd, &PIDM1struct));
     else

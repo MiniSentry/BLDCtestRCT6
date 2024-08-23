@@ -23,11 +23,15 @@ void vUartProtocol(void * pvParameters)
       if(uartRxBuffer[0] == DEVICE_ADDR)
       { //TODO: add CRC check here
         uartRxFinishFlag = 0;
+
+        //debug chunk
         for(uint8_t i=0; i<sizeof(uartRxBuffer); i++)
         {
           ITM_SendChar(uartRxBuffer[i]);
         }
         ITM_SendChar('\n');
+        //debug chunk end
+
       }
       else  // data fucked
       {

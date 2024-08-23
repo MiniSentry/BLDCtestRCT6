@@ -107,8 +107,11 @@ int main(void)
 
 	resetMotor();
 
-	runStateM1.dir = MOTOR_DIR_CCW;
-	runStateM1.targetSpd = 0.0f;
+	runStateM1.targetSpd = 50.0f;
+  if(runStateM1.targetSpd < 0.0f)
+    runStateM1.dir = MOTOR_DIR_CW;
+  else
+    runStateM1.dir = MOTOR_DIR_CCW;
 
   /* USER CODE END 2 */
 
