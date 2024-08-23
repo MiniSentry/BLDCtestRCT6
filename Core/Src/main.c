@@ -52,6 +52,7 @@
 
 /* USER CODE BEGIN PV */
 extern runStateStruct runStateM1;
+volatile uint8_t dbg_send_cnt = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -108,7 +109,7 @@ int main(void)
 	resetMotor();
 
 	runStateM1.dir = MOTOR_DIR_CCW;
-	runStateM1.targetSpd = 50.0f;
+	runStateM1.targetSpd = 200.0f;
 
   /* USER CODE END 2 */
 
@@ -190,7 +191,8 @@ void SystemClock_Config(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
-  	doPulse(&runStateM1);
+  doPulse(&runStateM1);
+  dbg_send_cnt++;
   /* USER CODE END Callback 0 */
   if (htim->Instance == TIM8) {
     HAL_IncTick();

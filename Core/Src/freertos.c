@@ -28,6 +28,8 @@
 #include "motorDrv.h"
 #include "speedCalc.h"
 #include "pid.h"
+#include "dbgPrintLog.h"
+#include <stdint.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,6 +52,7 @@
 runStateStruct runStateM1;
 PIDstruct PIDM1struct;
 uint32_t TickPerMs = 0;   //TODO: replace this with FreeRTOS tick
+extern volatile uint8_t dbg_send_cnt;
 /* USER CODE END Variables */
 osThreadId defaultTaskHandle;
 
@@ -105,7 +108,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* USER CODE BEGIN RTOS_THREADS */
-  xTaskCreate(vMotorPID, "MotorPID", 128, NULL, 0, NULL);
+  xTaskCreate(vMotorPID, "MotorPID", 256, NULL, 0, NULL);
   /* USER CODE END RTOS_THREADS */
 
 }
@@ -115,23 +118,26 @@ void MX_FREERTOS_Init(void) {
 
 void vMotorPID(void * pvParameters)
 {
-  int8_t StallFlag = 0;
+  static int8_t StallFlag = 0;
+  
   for(;;)
   {
     if (runStateM1.curSpd == 0.0f)
       StallFlag++;
-
     runStateM1.curSpd = getVelocity(&runStateM1);
-
-    if ((runStateM1.curSpd == 0.0f) && StallFlag >= 1)
+    if ((runStateM1.curSpd == 0.0f) && StallFlag >= 100)
       motorAlign(&runStateM1);
-
     StallFlag = 0;
-
     if(runStateM1.dir == MOTOR_DIR_CCW)
       runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.targetSpd - runStateM1.curSpd, &PIDM1struct));
     else
       runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.curSpd - runStateM1.targetSpd, &PIDM1struct));
+    if(dbg_send_cnt > 10)
+    {
+      dbg_send_cnt = 0;
+      //printf("%ld", (uint32_t)(runStateM1.curSpd*100));
+      ITM_SendChar((uint8_t)runStateM1.curSpd);
+    }
   }
   vTaskDelete(NULL);
 }

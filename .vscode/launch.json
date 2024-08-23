@@ -23,13 +23,33 @@
                 "cpuFrequency":72000000,
                 "decoders": [
                     {
+                        "type": "graph",
                         "port": 0,
-                        "type": "console",
                         "label": "SWO output",
-                        "encoding":"ascii"
+                        "encoding":"signed",
+                        "graphId": "1"
                     }
                 ]
             },
+            "graphConfig": 
+            [
+                {
+                    "label": "Speed",
+                    "timespan": 3,
+                    "type":"realtime",
+                    "annotate": false,
+                    "maximum": 255,
+                    "minimum": 0,
+                    "plots": 
+                    [
+                        {
+                            "graphId": "1",
+                            "label": "speed",
+                            "color": "#53753c"
+                        }
+                    ]
+                }
+            ],
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 4,

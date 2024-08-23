@@ -49,7 +49,7 @@ void updateState(runStateStruct* runState)
 	// This magic array will allow you to get current step number labeled according to ST's UM2788 page 12 "Hall sensor algorithm" Table 1
 	//	using just raw results from your hall sensor.
 	bufStep = GET_STEP[bufStep];
-	printf("[%ld]step: %d\n", new_pulse_timestamp, bufStep);
+	//printf("[%ld]step: %d\n", new_pulse_timestamp, bufStep);
 	if(bufStep == -1)
 		return;
 	if (bufStep == runState->curStep)

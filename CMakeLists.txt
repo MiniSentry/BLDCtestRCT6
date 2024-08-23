@@ -74,3 +74,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 )
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# Enable printf float
+target_link_options(${CMAKE_PROJECT_NAME} PUBLIC "-u_printf_float")
