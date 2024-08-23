@@ -87,6 +87,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj.d"
+  "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/uartProtocol.c.obj"
+  "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/uartProtocol.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/startup_stm32f103xe.s.obj"
 )
 

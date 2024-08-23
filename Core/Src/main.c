@@ -102,14 +102,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
   extern PIDstruct PIDM1struct;
 	PIDstructInit(&PIDM1struct);
-  
-  
+
 	resetState(&runStateM1);
 
 	resetMotor();
 
 	runStateM1.dir = MOTOR_DIR_CCW;
-	runStateM1.targetSpd = 200.0f;
+	runStateM1.targetSpd = 0.0f;
 
   /* USER CODE END 2 */
 

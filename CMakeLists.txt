@@ -53,6 +53,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     UsrLib/pid.c
     UsrLib/speedCalc.c
     UsrLib/sysTickManipulator.c
+    UsrLib/uartProtocol.c
 )
 
 # Add include paths

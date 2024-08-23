@@ -77,6 +77,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/minisentry/Code/BLDCtestRCT6/UsrLib/pid.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/pid.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/pid.c.obj.d"
   "/home/minisentry/Code/BLDCtestRCT6/UsrLib/speedCalc.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/speedCalc.c.obj.d"
   "/home/minisentry/Code/BLDCtestRCT6/UsrLib/sysTickManipulator.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.obj.d"
+  "/home/minisentry/Code/BLDCtestRCT6/UsrLib/uartProtocol.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/uartProtocol.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/uartProtocol.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

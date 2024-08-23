@@ -30,6 +30,7 @@
 #include "pid.h"
 #include "dbgPrintLog.h"
 #include <stdint.h>
+#include "uartProtocol.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,7 +60,7 @@ osThreadId defaultTaskHandle;
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 void vMotorPID(void * pvParameters);
-
+void vUartProtocol(void * pvParameters);
 /* USER CODE END FunctionPrototypes */
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -108,7 +109,8 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* USER CODE BEGIN RTOS_THREADS */
-  xTaskCreate(vMotorPID, "MotorPID", 256, NULL, 0, NULL);
+  //xTaskCreate(vMotorPID, "MotorPID", 64, NULL, 0, NULL);
+  xTaskCreate(vUartProtocol, "UART Protocol", 128, NULL, 0, NULL);
   /* USER CODE END RTOS_THREADS */
 
 }
@@ -136,10 +138,12 @@ void vMotorPID(void * pvParameters)
     {
       dbg_send_cnt = 0;
       //printf("%ld", (uint32_t)(runStateM1.curSpd*100));
-      ITM_SendChar((uint8_t)runStateM1.curSpd);
+      //ITM_SendChar((uint8_t)runStateM1.curSpd);
     }
   }
   vTaskDelete(NULL);
 }
+
+
 /* USER CODE END Application */
 

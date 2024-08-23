@@ -1161,6 +1161,30 @@ UsrLib/sysTickManipulator.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/sysTickManipulator.c.s
 .PHONY : UsrLib/sysTickManipulator.c.s
 
+UsrLib/uartProtocol.obj: UsrLib/uartProtocol.c.obj
+.PHONY : UsrLib/uartProtocol.obj
+
+# target to build an object file
+UsrLib/uartProtocol.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/uartProtocol.c.obj
+.PHONY : UsrLib/uartProtocol.c.obj
+
+UsrLib/uartProtocol.i: UsrLib/uartProtocol.c.i
+.PHONY : UsrLib/uartProtocol.i
+
+# target to preprocess a source file
+UsrLib/uartProtocol.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/uartProtocol.c.i
+.PHONY : UsrLib/uartProtocol.c.i
+
+UsrLib/uartProtocol.s: UsrLib/uartProtocol.c.s
+.PHONY : UsrLib/uartProtocol.s
+
+# target to generate assembly for a file
+UsrLib/uartProtocol.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/uartProtocol.c.s
+.PHONY : UsrLib/uartProtocol.c.s
+
 startup_stm32f103xe.obj: startup_stm32f103xe.s.obj
 .PHONY : startup_stm32f103xe.obj
 
@@ -1307,6 +1331,9 @@ help:
 	@echo "... UsrLib/sysTickManipulator.obj"
 	@echo "... UsrLib/sysTickManipulator.i"
 	@echo "... UsrLib/sysTickManipulator.s"
+	@echo "... UsrLib/uartProtocol.obj"
+	@echo "... UsrLib/uartProtocol.i"
+	@echo "... UsrLib/uartProtocol.s"
 	@echo "... startup_stm32f103xe.obj"
 .PHONY : help
 
