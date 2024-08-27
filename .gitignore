@@ -56,3 +56,6 @@ Debug/
 
 # clangd dumping crap around
 .cache/
+
+# CMake cache
+CMakeCache.txt
