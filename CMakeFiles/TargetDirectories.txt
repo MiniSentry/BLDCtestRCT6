@@ -1,5 +1,0 @@
-/home/minisentry/Code/BLDCtestRCT6/CMakeFiles/BLDC_F103RCT6.dir
-/home/minisentry/Code/BLDCtestRCT6/CMakeFiles/edit_cache.dir
-/home/minisentry/Code/BLDCtestRCT6/CMakeFiles/rebuild_cache.dir
-/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-/home/minisentry/Code/BLDCtestRCT6/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
