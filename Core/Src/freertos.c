@@ -25,12 +25,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "motorDrv.h"
-#include "speedCalc.h"
-#include "pid.h"
 #include "dbgPrintLog.h"
 #include <stdint.h>
 #include "uartProtocol.h"
+#include "bldcRtosPort.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,23 +48,40 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-runStateStruct runStateM1;
-PIDstruct PIDM1struct;
-uint32_t TickPerMs = 0;   //TODO: replace this with FreeRTOS tick
-extern volatile uint8_t dbg_send_cnt;
+extern MotorType Motor1;
 /* USER CODE END Variables */
 osThreadId defaultTaskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-void vMotorPID(void * pvParameters);
-void vUartProtocol(void * pvParameters);
+
 /* USER CODE END FunctionPrototypes */
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* GetIdleTaskMemory prototype (linked to static allocation support) */
 void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize );
+
+/* Hook prototypes */
+void configureTimerForRunTimeStats(void);
+unsigned long getRunTimeCounterValue(void);
+
+/* USER CODE BEGIN 1 */
+/* Functions needed when configGENERATE_RUN_TIME_STATS is on */
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS    configureTimerForRunTimeStats
+#define portGET_RUN_TIME_COUNTER_VALUE            getRunTimeCounterValue
+__weak void configureTimerForRunTimeStats(void)
+{
+  HAL_TIM_Base_Start_IT(&htim7);
+}
+
+extern volatile uint32_t ulHighFrequencyTimerTicks;
+
+__weak unsigned long getRunTimeCounterValue(void)
+{
+return ulHighFrequencyTimerTicks;
+}
+/* USER CODE END 1 */
 
 /* USER CODE BEGIN GET_IDLE_TASK_MEMORY */
 static StaticTask_t xIdleTaskTCBBuffer;
@@ -108,43 +123,28 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
+  /* definition and creation of defaultTask */
+
   /* USER CODE BEGIN RTOS_THREADS */
-  xTaskCreate(vMotorPID, "MotorPID", 64, NULL, 0, NULL);
+  xTaskCreate(vMotorPID, "MotorPID", 64, &Motor1, 0, NULL);
   xTaskCreate(vUartProtocol, "UART Protocol", 128, NULL, 0, NULL);
   /* USER CODE END RTOS_THREADS */
 
 }
 
+/* USER CODE BEGIN Header_StartDefaultTask */
+/**
+  * @brief  Function implementing the defaultTask thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_StartDefaultTask */
+
+
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
 
-void vMotorPID(void * pvParameters)
-{
-  static uint8_t StallFlag;
-  
-  for(;;)
-  {
-    if (runStateM1.curSpd == 0.0f)
-      StallFlag++;
-    runStateM1.curSpd = getVelocity(&runStateM1);
-    if ((runStateM1.curSpd == 0.0f) && StallFlag >= 200)
-    {
-      motorAlign(&runStateM1);
-      StallFlag = 0;
-    }
-    if(runStateM1.dir == MOTOR_DIR_CCW)
-      runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.targetSpd - runStateM1.curSpd, &PIDM1struct));
-    else
-      runStateM1.pulse = (uint16_t)(133.0f * PIDoperator(runStateM1.curSpd - runStateM1.targetSpd, &PIDM1struct));
-    if(dbg_send_cnt > 10)
-    {
-      dbg_send_cnt = 0;
-      //printf("%ld", (uint32_t)(runStateM1.curSpd*100));
-      //ITM_SendChar((uint8_t)runStateM1.curSpd);
-    }
-  }
-  vTaskDelete(NULL);
-}
+
 
 
 /* USER CODE END Application */

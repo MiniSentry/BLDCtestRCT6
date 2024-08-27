@@ -50,6 +50,7 @@ void vUartProtocol(void * pvParameters)
       {
         uartRxBuffer[i] = 0;
       }
+      
     }
   }
 }

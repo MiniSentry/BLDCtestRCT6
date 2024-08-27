@@ -30,7 +30,7 @@
 #include "motorDrv.h"
 #include "speedCalc.h"
 #include "pid.h"
-
+#include "bldcRtosPort.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,8 +51,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern runStateStruct runStateM1;
 volatile uint8_t dbg_send_cnt = 0;
+extern runStateStruct runStateM1;
+extern PIDstruct PIDM1struct;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -80,7 +81,6 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-
   HAL_Init();
 
   /* USER CODE BEGIN Init */
@@ -99,8 +99,8 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM1_Init();
   MX_UART4_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
-  extern PIDstruct PIDM1struct;
 	PIDstructInit(&PIDM1struct);
 
 	resetState(&runStateM1);

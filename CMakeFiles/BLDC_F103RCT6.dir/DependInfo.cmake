@@ -72,6 +72,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/minisentry/Code/BLDCtestRCT6/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj.d"
   "/home/minisentry/Code/BLDCtestRCT6/Middlewares/Third_Party/FreeRTOS/Source/tasks.c" "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d"
   "/home/minisentry/Code/BLDCtestRCT6/Middlewares/Third_Party/FreeRTOS/Source/timers.c" "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d"
+  "/home/minisentry/Code/BLDCtestRCT6/UsrLib/bldcRtosPort.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/bldcRtosPort.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/bldcRtosPort.c.obj.d"
   "/home/minisentry/Code/BLDCtestRCT6/UsrLib/dbgPrintLog.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj.d"
   "/home/minisentry/Code/BLDCtestRCT6/UsrLib/motorDrv.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/motorDrv.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/motorDrv.c.obj.d"
   "/home/minisentry/Code/BLDCtestRCT6/UsrLib/pid.c" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/pid.c.obj" "gcc" "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/pid.c.obj.d"

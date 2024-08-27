@@ -1041,6 +1041,30 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+UsrLib/bldcRtosPort.obj: UsrLib/bldcRtosPort.c.obj
+.PHONY : UsrLib/bldcRtosPort.obj
+
+# target to build an object file
+UsrLib/bldcRtosPort.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/bldcRtosPort.c.obj
+.PHONY : UsrLib/bldcRtosPort.c.obj
+
+UsrLib/bldcRtosPort.i: UsrLib/bldcRtosPort.c.i
+.PHONY : UsrLib/bldcRtosPort.i
+
+# target to preprocess a source file
+UsrLib/bldcRtosPort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/bldcRtosPort.c.i
+.PHONY : UsrLib/bldcRtosPort.c.i
+
+UsrLib/bldcRtosPort.s: UsrLib/bldcRtosPort.c.s
+.PHONY : UsrLib/bldcRtosPort.s
+
+# target to generate assembly for a file
+UsrLib/bldcRtosPort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BLDC_F103RCT6.dir/build.make CMakeFiles/BLDC_F103RCT6.dir/UsrLib/bldcRtosPort.c.s
+.PHONY : UsrLib/bldcRtosPort.c.s
+
 UsrLib/dbgPrintLog.obj: UsrLib/dbgPrintLog.c.obj
 .PHONY : UsrLib/dbgPrintLog.obj
 
@@ -1316,6 +1340,9 @@ help:
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.obj"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.i"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.s"
+	@echo "... UsrLib/bldcRtosPort.obj"
+	@echo "... UsrLib/bldcRtosPort.i"
+	@echo "... UsrLib/bldcRtosPort.s"
 	@echo "... UsrLib/dbgPrintLog.obj"
 	@echo "... UsrLib/dbgPrintLog.i"
 	@echo "... UsrLib/dbgPrintLog.s"

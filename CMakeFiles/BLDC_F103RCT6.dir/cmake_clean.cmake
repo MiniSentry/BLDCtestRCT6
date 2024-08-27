@@ -77,6 +77,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
   "CMakeFiles/BLDC_F103RCT6.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d"
+  "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/bldcRtosPort.c.obj"
+  "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/bldcRtosPort.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/dbgPrintLog.c.obj.d"
   "CMakeFiles/BLDC_F103RCT6.dir/UsrLib/motorDrv.c.obj"
