@@ -31,6 +31,7 @@ void vUartProtocol(void * pvParameters)
         }
         ITM_SendChar('\n');
         //debug chunk end
+        
 
       }
       else  // data fucked

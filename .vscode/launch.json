@@ -23,15 +23,15 @@
                 "cpuFrequency":72000000,
                 "decoders": [
                     {
-                        "type": "console",
+                        "type": "graph",
                         "port": 0,
                         "label": "SWO output",
-                        "encoding":"ascii",
-                        //"graphId": "1"
+                        "encoding":"unsigned",
+                        "graphId": "1"
                     }
                 ]
             },
-            /*"graphConfig": 
+            "graphConfig": 
             [
                 {
                     "label": "Speed",
@@ -49,7 +49,7 @@
                         }
                     ]
                 }
-            ],*/
+            ],
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 4,

@@ -27,11 +27,11 @@ void vMotorPID(void * pvParameters)
       runState->pulse = (uint16_t)(133.0f * PIDoperator(runState->targetSpd - runState->curSpd, PIDstruct));
     else
       runState->pulse = (uint16_t)(133.0f * PIDoperator(runState->curSpd - runState->targetSpd, PIDstruct));
-    if(dbg_send_cnt > 10)
+    if(dbg_send_cnt > 50)
     {
       dbg_send_cnt = 0;
-      //printf("%ld", (uint32_t)(runStateM1.curSpd*100));
-      //ITM_SendChar((uint8_t)runStateM1.curSpd);
+      //printf("%d", (uint16_t)(runStateM1.curSpd*100));
+      ITM_SendChar((uint8_t)runStateM1.curSpd);
     }
   }
 }
